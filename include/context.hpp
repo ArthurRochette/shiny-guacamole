@@ -3,15 +3,11 @@
 
 #include <GLFW/glfw3.h>
 
-
-
-struct Context : public GLFWwindow
+class Context : public GLFWwindow
 {
-    
-        Context();
-        ~Context();
-   
 
+	Context();
+	~Context();
 };
 
-#endif //CONTEXT_HPP
+#endif // CONTEXT_HPP

@@ -1,3 +1,0 @@
-/home/arthur/Desktop/cpp mg/_deps/glfw-subbuild/CMakeFiles/rebuild_cache.dir
-/home/arthur/Desktop/cpp mg/_deps/glfw-subbuild/CMakeFiles/edit_cache.dir
-/home/arthur/Desktop/cpp mg/_deps/glfw-subbuild/CMakeFiles/glfw-populate.dir

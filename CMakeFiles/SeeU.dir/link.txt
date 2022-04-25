@@ -1,1 +1,0 @@
-/bin/c++     CMakeFiles/SeeU.dir/main.cpp.o  -o SeeU  _deps/glad-build/libglad.a _deps/glfw-build/src/libglfw3.a /usr/lib/x86_64-linux-gnu/librt.so -lm -ldl /usr/lib/x86_64-linux-gnu/libX11.so -lpthread 
