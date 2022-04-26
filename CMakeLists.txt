@@ -21,7 +21,8 @@ FetchContent_MakeAvailable(glad)
 
 
 add_executable(main main.cpp)
-link_directories(${CMAKE_SOURCE_DIR}/include)
-target_link_libraries(main glad )
-target_link_libraries(main glfw )
+add_library(shiny-g include/environment.cpp include/environment.hpp )
+target_link_libraries(shiny-g glad glfw)
+target_link_libraries(main shiny-g )
+
 
