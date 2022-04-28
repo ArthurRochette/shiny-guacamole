@@ -162,30 +162,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main
+# Target rules for targets named Main
 
 # Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
-.PHONY : main
+Main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Main
+.PHONY : Main
 
 # fast build rule for target.
-main/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
+Main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/build
+.PHONY : Main/fast
 
 #=============================================================================
-# Target rules for targets named shiny-g
+# Target rules for targets named shiny-guacamole
 
 # Build rule for target.
-shiny-g: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 shiny-g
-.PHONY : shiny-g
+shiny-guacamole: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 shiny-guacamole
+.PHONY : shiny-guacamole
 
 # fast build rule for target.
-shiny-g/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shiny-g.dir/build.make CMakeFiles/shiny-g.dir/build
-.PHONY : shiny-g/fast
+shiny-guacamole/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/shiny-guacamole.dir/build.make src/CMakeFiles/shiny-guacamole.dir/build
+.PHONY : shiny-guacamole/fast
 
 #=============================================================================
 # Target rules for targets named uninstall
@@ -629,36 +629,12 @@ glad/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/glad-build/CMakeFiles/glad.dir/build.make _deps/glad-build/CMakeFiles/glad.dir/build
 .PHONY : glad/fast
 
-include/environment.o: include/environment.cpp.o
-.PHONY : include/environment.o
-
-# target to build an object file
-include/environment.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shiny-g.dir/build.make CMakeFiles/shiny-g.dir/include/environment.cpp.o
-.PHONY : include/environment.cpp.o
-
-include/environment.i: include/environment.cpp.i
-.PHONY : include/environment.i
-
-# target to preprocess a source file
-include/environment.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shiny-g.dir/build.make CMakeFiles/shiny-g.dir/include/environment.cpp.i
-.PHONY : include/environment.cpp.i
-
-include/environment.s: include/environment.cpp.s
-.PHONY : include/environment.s
-
-# target to generate assembly for a file
-include/environment.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/shiny-g.dir/build.make CMakeFiles/shiny-g.dir/include/environment.cpp.s
-.PHONY : include/environment.cpp.s
-
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -666,7 +642,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -674,7 +650,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Main.dir/build.make CMakeFiles/Main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -692,6 +668,7 @@ help:
 	@echo "... glad-generate-files"
 	@echo "... uninstall"
 	@echo "... update_mappings"
+	@echo "... Main"
 	@echo "... boing"
 	@echo "... clipboard"
 	@echo "... cursor"
@@ -707,7 +684,6 @@ help:
 	@echo "... iconify"
 	@echo "... inputlag"
 	@echo "... joysticks"
-	@echo "... main"
 	@echo "... monitors"
 	@echo "... msaa"
 	@echo "... offscreen"
@@ -715,7 +691,7 @@ help:
 	@echo "... particles"
 	@echo "... reopen"
 	@echo "... sharing"
-	@echo "... shiny-g"
+	@echo "... shiny-guacamole"
 	@echo "... simple"
 	@echo "... splitview"
 	@echo "... tearing"
@@ -725,9 +701,6 @@ help:
 	@echo "... triangle-vulkan"
 	@echo "... wave"
 	@echo "... windows"
-	@echo "... include/environment.o"
-	@echo "... include/environment.i"
-	@echo "... include/environment.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

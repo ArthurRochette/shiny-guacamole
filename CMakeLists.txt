@@ -1,28 +1,17 @@
-include(FetchContent)
 cmake_minimum_required(VERSION 3.16)
-
-project(SeeU)
+project(truc)
 
 set(CMAKE_CXX_STANDARD 17)
-
-set(BUILD_SHARED_LIBS OFF)
-FetchContent_Declare(
-        glfw
-        GIT_REPOSITORY https://github.com/glfw/glfw.git
-        GIT_TAG 3.3.7
-)
-FetchContent_Declare(
-        glad
-        GIT_REPOSITORY https://github.com/Dav1dde/glad.git
-)
-
-FetchContent_MakeAvailable(glfw)
-FetchContent_MakeAvailable(glad)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 
 
-add_executable(main main.cpp)
-add_library(shiny-g include/environment.cpp include/environment.hpp )
-target_link_libraries(shiny-g glad glfw)
-target_link_libraries(main shiny-g )
 
+add_subdirectory(src)
+add_executable(Main main.cpp)
 
+target_link_libraries(Main PUBLIC src)
+
+target_include_directories(Main PUBLIC
+                          "${PROJECT_BINARY_DIR}"
+                          "${PROJECT_SOURCE_DIR}/src"
+                          )
