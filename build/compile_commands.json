@@ -15,6 +15,16 @@
   "file": "/home/arthur/work/shiny-guacamole/src/window.cpp"
 },
 {
+  "directory": "/home/arthur/work/shiny-guacamole/build",
+  "command": "/usr/bin/c++  -I/home/arthur/work/shiny-guacamole/src -I/home/arthur/work/shiny-guacamole/build/_deps/glad-build/include -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -o CMakeFiles/test.dir/src/Shape.cpp.o -c /home/arthur/work/shiny-guacamole/src/Shape.cpp",
+  "file": "/home/arthur/work/shiny-guacamole/src/Shape.cpp"
+},
+{
+  "directory": "/home/arthur/work/shiny-guacamole/build",
+  "command": "/usr/bin/c++  -I/home/arthur/work/shiny-guacamole/src -I/home/arthur/work/shiny-guacamole/build/_deps/glad-build/include -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -o CMakeFiles/test.dir/src/color.cpp.o -c /home/arthur/work/shiny-guacamole/src/color.cpp",
+  "file": "/home/arthur/work/shiny-guacamole/src/color.cpp"
+},
+{
   "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/src",
   "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/src -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/src -g -fPIC -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/context.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/src/context.c",
   "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/src/context.c"

@@ -1,5 +1,5 @@
-#ifndef VECTORS_HPP
-#define VECTORS_HPP
+#ifndef VECTORS2_HPP
+#define VECTORS2_HPP
 
 
 namespace SG
@@ -23,4 +23,4 @@ namespace SG
 
 }
 
-#endif // VECTORS_HPP
+#endif // VECTORS2_HPP

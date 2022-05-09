@@ -34,9 +34,9 @@ void SG::Environment::start()
     }
 }
 
-void SG::Environment::addWindow(int sizex, int sizey, char const *name)
+void SG::Environment::addWindow(int sizex, int sizey,int posx, int posy, char const *name)
 {
-    Window *window = new Window(sizex, sizey, name);
+    Window *window = new Window(sizex, sizey, posx, posy, name);
     this->windows.push_back(window);
 }
 

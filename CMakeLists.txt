@@ -19,7 +19,8 @@ FetchContent_MakeAvailable(glad)
 
 
 include_directories(src)
-add_executable(test main.cpp src/vectors.hpp src/environment.hpp src/environment.cpp  src/window.hpp src/window.cpp)
+add_executable(test main.cpp src/vectors2.hpp src/environment.hpp src/environment.cpp /
+ src/window.hpp src/window.cpp src/Shape.cpp src/Shape.hpp src/color.hpp src/color.cpp)
 target_link_libraries(test glad glfw )
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})

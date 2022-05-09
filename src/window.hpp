@@ -5,7 +5,7 @@
 #include <GLFW/glfw3.h>
 #include <iostream>
 
-#include "vectors.hpp"
+#include "vectors2.hpp"
 
 namespace SG
 {

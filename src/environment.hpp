@@ -19,7 +19,7 @@ namespace SG
     public:
         Environment();
         void start();
-        void addWindow(int sizex, int sizey, char const *name);
+        void addWindow(int sizex, int sizey, int posx, int posy,  char const *name);
     };
 
 }

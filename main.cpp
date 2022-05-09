@@ -1,10 +1,10 @@
 #include <iostream>
 #include "src/environment.hpp"
+#include "src/color.hpp"
 
 using namespace SG;
 
 int main(int, char**) {
-    Environment env;
-    env.addWindow(800, 600, "Hello World");
-    env.start();
+
+    std::cout << Color::toHex(255, 0, 167) << std::endl;
 }
