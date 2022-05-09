@@ -1,8 +1,11 @@
 #include "vectors.hpp"
 
-Vector2i& operator+(const Vector2i &a, const Vector2i &b){
-    Vector2i c;
-    c.x = a.x + b.x;
-    c.y = a.y + b.y;
-    return c;
+
+SG::Vector2i operator+(const SG::Vector2i &a, const SG::Vector2i &b){
+
+    return SG::Vector2i(a.x + b.x,a.y + b.y);
+}
+
+SG::Vector2f operator+(const SG::Vector2f &a, const SG::Vector2f &b){
+    return SG::Vector2f(a.x + b.x , a.y + b.y);
 }

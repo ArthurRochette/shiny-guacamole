@@ -44,12 +44,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/arthur/work/shiny-guacamole/src/cmake_install.cmake")
+  include("/home/arthur/work/shiny-guacamole/build/src/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/arthur/work/shiny-guacamole/test/cmake_install.cmake")
+  include("/home/arthur/work/shiny-guacamole/build/test/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -60,5 +60,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/arthur/work/shiny-guacamole/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/arthur/work/shiny-guacamole/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

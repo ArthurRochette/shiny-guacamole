@@ -1,17 +1,12 @@
 cmake_minimum_required(VERSION 3.16)
-project(truc)
+
+project(AppTest)
 
 set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
-
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ./bin)
+set(CMAKE_BUILD_TYPE Debug)
 
 
 add_subdirectory(src)
-add_executable(Main main.cpp)
+add_subdirectory(test)
 
-target_link_libraries(Main PUBLIC src)
-
-target_include_directories(Main PUBLIC
-                          "${PROJECT_BINARY_DIR}"
-                          "${PROJECT_SOURCE_DIR}/src"
-                          )

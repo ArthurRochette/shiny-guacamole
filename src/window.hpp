@@ -1,14 +1,27 @@
 #ifndef WINDOW_HPP
 #define WINDOW_HPP
 
+#include <glad/glad.h>
+#include <GLFW/glfw3.h>
+#include <iostream>
+
 #include "vectors.hpp"
 
-class Window{
-public:
-Window();
-private:
-    Vector2f pos;
+namespace SG
+{
+    class Window
+    {
+    public:
+        Window(int x, int y, char const *name, Vector2f pos);
+        Window(int x, int y, char const *name);
 
-};
+        void render();
+        GLFWwindow *const getWindow();
 
-#endif //WINDOW_HPP
+    private:
+        GLFWwindow *window;
+        Vector2f pos;
+    };
+}
+
+#endif // WINDOW_HPP

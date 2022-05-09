@@ -1,19 +1,27 @@
 #ifndef ENV_HPP
 #define ENV_HPP
-#define GLFW_INCLUDE_NONE
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
+#include <memory>
+#include <vector>
 
-// create class inhertiting from glfwwindow
-class Environment
+#include "window.hpp"
+
+
+namespace SG
 {
-private:
-    GLFWwindow *window;
+    class Environment
+    {
+    private:
+        std::vector<Window *> windows; // creer une classe window pour pouvoir y stocker une fonction de render
 
-public:
-    Environment();
-    void start();
-};
+    public:
+        Environment();
+        void start();
+        void addWindow(int sizex, int sizey, char const *name);
+    };
+
+}
 
 #endif // CONTEXT_HPP

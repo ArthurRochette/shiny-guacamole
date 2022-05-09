@@ -70,7 +70,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/arthur/work/shiny-guacamole
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/arthur/work/shiny-guacamole
+CMAKE_BINARY_DIR = /home/arthur/work/shiny-guacamole/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -145,9 +145,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/arthur/work/shiny-guacamole/CMakeFiles /home/arthur/work/shiny-guacamole//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/arthur/work/shiny-guacamole/build/CMakeFiles /home/arthur/work/shiny-guacamole/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/arthur/work/shiny-guacamole/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/arthur/work/shiny-guacamole/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -631,17 +631,17 @@ glad-generate-files/fast:
 .PHONY : glad-generate-files/fast
 
 #=============================================================================
-# Target rules for targets named AppTest
+# Target rules for targets named main
 
 # Build rule for target.
-AppTest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 AppTest
-.PHONY : AppTest
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-AppTest/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/AppTest.dir/build.make test/CMakeFiles/AppTest.dir/build
-.PHONY : AppTest/fast
+main/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/main.dir/build.make test/CMakeFiles/main.dir/build
+.PHONY : main/fast
 
 # Help Target
 help:
@@ -658,7 +658,6 @@ help:
 	@echo "... glad-generate-files"
 	@echo "... uninstall"
 	@echo "... update_mappings"
-	@echo "... AppTest"
 	@echo "... boing"
 	@echo "... clipboard"
 	@echo "... cursor"
@@ -674,6 +673,7 @@ help:
 	@echo "... iconify"
 	@echo "... inputlag"
 	@echo "... joysticks"
+	@echo "... main"
 	@echo "... monitors"
 	@echo "... msaa"
 	@echo "... offscreen"

@@ -1,5 +1,3 @@
-// hello world
-
 #include <iostream>
 
 #include "environment.hpp"
@@ -13,4 +11,3 @@ int main()
     env->start();
     return 0;
 }
-

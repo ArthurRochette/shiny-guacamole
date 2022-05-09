@@ -70,7 +70,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/arthur/work/shiny-guacamole
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/arthur/work/shiny-guacamole
+CMAKE_BINARY_DIR = /home/arthur/work/shiny-guacamole/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -145,14 +145,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/arthur/work/shiny-guacamole && $(CMAKE_COMMAND) -E cmake_progress_start /home/arthur/work/shiny-guacamole/CMakeFiles /home/arthur/work/shiny-guacamole/src//CMakeFiles/progress.marks
-	cd /home/arthur/work/shiny-guacamole && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/arthur/work/shiny-guacamole/CMakeFiles 0
+	cd /home/arthur/work/shiny-guacamole/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/arthur/work/shiny-guacamole/build/CMakeFiles /home/arthur/work/shiny-guacamole/build/src//CMakeFiles/progress.marks
+	cd /home/arthur/work/shiny-guacamole/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/arthur/work/shiny-guacamole/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/arthur/work/shiny-guacamole && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
+	cd /home/arthur/work/shiny-guacamole/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -162,22 +162,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/arthur/work/shiny-guacamole && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/arthur/work/shiny-guacamole/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/arthur/work/shiny-guacamole && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/arthur/work/shiny-guacamole/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/arthur/work/shiny-guacamole && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/arthur/work/shiny-guacamole/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/shiny_guacamole.dir/rule:
-	cd /home/arthur/work/shiny-guacamole && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/shiny_guacamole.dir/rule
+	cd /home/arthur/work/shiny-guacamole/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/shiny_guacamole.dir/rule
 .PHONY : src/CMakeFiles/shiny_guacamole.dir/rule
 
 # Convenience name for target.
@@ -187,7 +187,7 @@ shiny_guacamole: src/CMakeFiles/shiny_guacamole.dir/rule
 
 # fast build rule for target.
 shiny_guacamole/fast:
-	cd /home/arthur/work/shiny-guacamole && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/shiny_guacamole.dir/build.make src/CMakeFiles/shiny_guacamole.dir/build
+	cd /home/arthur/work/shiny-guacamole/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/shiny_guacamole.dir/build.make src/CMakeFiles/shiny_guacamole.dir/build
 .PHONY : shiny_guacamole/fast
 
 environment.o: environment.cpp.o
@@ -196,7 +196,7 @@ environment.o: environment.cpp.o
 
 # target to build an object file
 environment.cpp.o:
-	cd /home/arthur/work/shiny-guacamole && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/shiny_guacamole.dir/build.make src/CMakeFiles/shiny_guacamole.dir/environment.cpp.o
+	cd /home/arthur/work/shiny-guacamole/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/shiny_guacamole.dir/build.make src/CMakeFiles/shiny_guacamole.dir/environment.cpp.o
 .PHONY : environment.cpp.o
 
 environment.i: environment.cpp.i
@@ -205,7 +205,7 @@ environment.i: environment.cpp.i
 
 # target to preprocess a source file
 environment.cpp.i:
-	cd /home/arthur/work/shiny-guacamole && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/shiny_guacamole.dir/build.make src/CMakeFiles/shiny_guacamole.dir/environment.cpp.i
+	cd /home/arthur/work/shiny-guacamole/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/shiny_guacamole.dir/build.make src/CMakeFiles/shiny_guacamole.dir/environment.cpp.i
 .PHONY : environment.cpp.i
 
 environment.s: environment.cpp.s
@@ -214,7 +214,7 @@ environment.s: environment.cpp.s
 
 # target to generate assembly for a file
 environment.cpp.s:
-	cd /home/arthur/work/shiny-guacamole && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/shiny_guacamole.dir/build.make src/CMakeFiles/shiny_guacamole.dir/environment.cpp.s
+	cd /home/arthur/work/shiny-guacamole/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/shiny_guacamole.dir/build.make src/CMakeFiles/shiny_guacamole.dir/environment.cpp.s
 .PHONY : environment.cpp.s
 
 vectors.o: vectors.cpp.o
@@ -223,7 +223,7 @@ vectors.o: vectors.cpp.o
 
 # target to build an object file
 vectors.cpp.o:
-	cd /home/arthur/work/shiny-guacamole && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/shiny_guacamole.dir/build.make src/CMakeFiles/shiny_guacamole.dir/vectors.cpp.o
+	cd /home/arthur/work/shiny-guacamole/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/shiny_guacamole.dir/build.make src/CMakeFiles/shiny_guacamole.dir/vectors.cpp.o
 .PHONY : vectors.cpp.o
 
 vectors.i: vectors.cpp.i
@@ -232,7 +232,7 @@ vectors.i: vectors.cpp.i
 
 # target to preprocess a source file
 vectors.cpp.i:
-	cd /home/arthur/work/shiny-guacamole && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/shiny_guacamole.dir/build.make src/CMakeFiles/shiny_guacamole.dir/vectors.cpp.i
+	cd /home/arthur/work/shiny-guacamole/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/shiny_guacamole.dir/build.make src/CMakeFiles/shiny_guacamole.dir/vectors.cpp.i
 .PHONY : vectors.cpp.i
 
 vectors.s: vectors.cpp.s
@@ -241,7 +241,7 @@ vectors.s: vectors.cpp.s
 
 # target to generate assembly for a file
 vectors.cpp.s:
-	cd /home/arthur/work/shiny-guacamole && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/shiny_guacamole.dir/build.make src/CMakeFiles/shiny_guacamole.dir/vectors.cpp.s
+	cd /home/arthur/work/shiny-guacamole/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/shiny_guacamole.dir/build.make src/CMakeFiles/shiny_guacamole.dir/vectors.cpp.s
 .PHONY : vectors.cpp.s
 
 window.o: window.cpp.o
@@ -250,7 +250,7 @@ window.o: window.cpp.o
 
 # target to build an object file
 window.cpp.o:
-	cd /home/arthur/work/shiny-guacamole && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/shiny_guacamole.dir/build.make src/CMakeFiles/shiny_guacamole.dir/window.cpp.o
+	cd /home/arthur/work/shiny-guacamole/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/shiny_guacamole.dir/build.make src/CMakeFiles/shiny_guacamole.dir/window.cpp.o
 .PHONY : window.cpp.o
 
 window.i: window.cpp.i
@@ -259,7 +259,7 @@ window.i: window.cpp.i
 
 # target to preprocess a source file
 window.cpp.i:
-	cd /home/arthur/work/shiny-guacamole && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/shiny_guacamole.dir/build.make src/CMakeFiles/shiny_guacamole.dir/window.cpp.i
+	cd /home/arthur/work/shiny-guacamole/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/shiny_guacamole.dir/build.make src/CMakeFiles/shiny_guacamole.dir/window.cpp.i
 .PHONY : window.cpp.i
 
 window.s: window.cpp.s
@@ -268,7 +268,7 @@ window.s: window.cpp.s
 
 # target to generate assembly for a file
 window.cpp.s:
-	cd /home/arthur/work/shiny-guacamole && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/shiny_guacamole.dir/build.make src/CMakeFiles/shiny_guacamole.dir/window.cpp.s
+	cd /home/arthur/work/shiny-guacamole/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/shiny_guacamole.dir/build.make src/CMakeFiles/shiny_guacamole.dir/window.cpp.s
 .PHONY : window.cpp.s
 
 # Help Target
@@ -304,6 +304,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/arthur/work/shiny-guacamole && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/arthur/work/shiny-guacamole/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

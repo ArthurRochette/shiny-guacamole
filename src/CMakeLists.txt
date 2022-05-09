@@ -13,5 +13,6 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(glfw)
 FetchContent_MakeAvailable(glad)
-add_library(shiny-guacamole environment.cpp environment.hpp vectors.cpp vectors.hpp)
-target_link_libraries(shiny-guacamole glad glfw)
+
+add_library(shiny_guacamole vectors.hpp vectors.cpp environment.hpp environment.cpp window.hpp window.cpp  )
+target_link_libraries(shiny_guacamole glad glfw )
