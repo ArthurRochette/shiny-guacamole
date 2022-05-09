@@ -7,13 +7,14 @@ void WindowLife(GLFWwindow *window);
 
 SG::Environment::Environment()
 {
-    glfwSetErrorCallback(ErrorCallback);
-    glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
     if (!glfwInit())
     {
         std::cerr << "Failed to initialize GLFW" << std::endl;
         return;
     }
+    glfwSetErrorCallback(ErrorCallback);
+    glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
+    
 }
 
 void SG::Environment::start()

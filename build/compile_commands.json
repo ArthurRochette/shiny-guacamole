@@ -1,17 +1,17 @@
 [
 {
-  "directory": "/home/arthur/work/shiny-guacamole/build/src",
-  "command": "/usr/bin/c++  -I/home/arthur/work/shiny-guacamole/build/_deps/glad-build/include -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu++17 -o CMakeFiles/shiny_guacamole.dir/vectors.cpp.o -c /home/arthur/work/shiny-guacamole/src/vectors.cpp",
-  "file": "/home/arthur/work/shiny-guacamole/src/vectors.cpp"
+  "directory": "/home/arthur/work/shiny-guacamole/build",
+  "command": "/usr/bin/c++  -I/home/arthur/work/shiny-guacamole/src -I/home/arthur/work/shiny-guacamole/build/_deps/glad-build/include -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -o CMakeFiles/test.dir/main.cpp.o -c /home/arthur/work/shiny-guacamole/main.cpp",
+  "file": "/home/arthur/work/shiny-guacamole/main.cpp"
 },
 {
-  "directory": "/home/arthur/work/shiny-guacamole/build/src",
-  "command": "/usr/bin/c++  -I/home/arthur/work/shiny-guacamole/build/_deps/glad-build/include -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu++17 -o CMakeFiles/shiny_guacamole.dir/environment.cpp.o -c /home/arthur/work/shiny-guacamole/src/environment.cpp",
+  "directory": "/home/arthur/work/shiny-guacamole/build",
+  "command": "/usr/bin/c++  -I/home/arthur/work/shiny-guacamole/src -I/home/arthur/work/shiny-guacamole/build/_deps/glad-build/include -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -o CMakeFiles/test.dir/src/environment.cpp.o -c /home/arthur/work/shiny-guacamole/src/environment.cpp",
   "file": "/home/arthur/work/shiny-guacamole/src/environment.cpp"
 },
 {
-  "directory": "/home/arthur/work/shiny-guacamole/build/src",
-  "command": "/usr/bin/c++  -I/home/arthur/work/shiny-guacamole/build/_deps/glad-build/include -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu++17 -o CMakeFiles/shiny_guacamole.dir/window.cpp.o -c /home/arthur/work/shiny-guacamole/src/window.cpp",
+  "directory": "/home/arthur/work/shiny-guacamole/build",
+  "command": "/usr/bin/c++  -I/home/arthur/work/shiny-guacamole/src -I/home/arthur/work/shiny-guacamole/build/_deps/glad-build/include -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -o CMakeFiles/test.dir/src/window.cpp.o -c /home/arthur/work/shiny-guacamole/src/window.cpp",
   "file": "/home/arthur/work/shiny-guacamole/src/window.cpp"
 },
 {
@@ -453,10 +453,5 @@
   "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glad-build",
   "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glad-build/include -g -o CMakeFiles/glad.dir/src/glad.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glad-build/src/glad.c",
   "file": "/home/arthur/work/shiny-guacamole/build/_deps/glad-build/src/glad.c"
-},
-{
-  "directory": "/home/arthur/work/shiny-guacamole/build/test",
-  "command": "/usr/bin/c++   -g -std=gnu++17 -o CMakeFiles/main.dir/main.cpp.o -c /home/arthur/work/shiny-guacamole/test/main.cpp",
-  "file": "/home/arthur/work/shiny-guacamole/test/main.cpp"
 }
 ]

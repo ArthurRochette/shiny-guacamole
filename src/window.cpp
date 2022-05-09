@@ -1,14 +1,16 @@
 #include "window.hpp"
 #include <stdexcept>
 
-SG::Window::Window(int x, int y, char const *name, Vector2f pos)
-{
-    window = glfwCreateWindow(x, y, name, NULL, NULL);
+
+SG::Window::Window(vec2i size, char const *name ){
+    window = glfwCreateWindow(size.x, size.y, name, NULL, NULL);
+    glfwMakeContextCurrent(window);
+    gladLoadGL();
     if (window == nullptr)
     {
         throw std::runtime_error("Failed to create GLFW window");
     }
-    this->pos = pos;
+    this->size = size;
 }
 
 SG::Window::Window(int x, int y, char const *name)
@@ -20,8 +22,8 @@ SG::Window::Window(int x, int y, char const *name)
     {
         throw std::runtime_error("Failed to create GLFW window");
     }
-    this->pos.x = 0;
-    this->pos.y = 0;
+    this->size = vec2i(x, y);
+
 }
 void SG::Window::render()
 {

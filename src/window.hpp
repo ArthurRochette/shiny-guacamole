@@ -12,15 +12,16 @@ namespace SG
     class Window
     {
     public:
-        Window(int x, int y, char const *name, Vector2f pos);
-        Window(int x, int y, char const *name);
+        Window(vec2i size, vec2i pos, char const *name );
+        Window(int x_size, int y_size, int x_pos , int y_pos, char const *name);
 
         void render();
         GLFWwindow *const getWindow();
 
     private:
         GLFWwindow *window;
-        Vector2f pos;
+        vec2i size;
+        vec2i pos;
     };
 }
 
