@@ -12,11 +12,9 @@ SG::Window::Window(vec2i size,vec2i pos, char const *name ): size(size), pos(pos
     }
     glEnable(GL_DEPTH_TEST);
     glDepthFunc(GL_LESS);
-    glMatrixMode(GL_PROJECTION);
-    glLoadIdentity();
-    glFrustum(-1.0f, 1.0f, -1.0f, -1.0f, 1.0f, 40.0f); 
-    glMatrixMode( GL_MODELVIEW );
-    glLoadIdentity();
+
+    glFrustum(-10.0f, 10.0f, -10.0f, -10.0f, 1.0f, 40.0f); 
+
 
 }
 
@@ -36,10 +34,6 @@ SG::Window::Window(int x_size, int y_size, int x_pos , int y_pos, char const *na
     glDepthFunc(GL_LESS);
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    glFrustum(-1.0f, 1.0f, -1.0f, -1.0f, 1.0f, 40.0f); 
-    glMatrixMode( GL_MODELVIEW );
-    glLoadIdentity();
-
     
 }
 
