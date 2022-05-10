@@ -10,6 +10,16 @@ namespace SG
         vec2f(float x, float y) : x(x), y(y) {};
         float x;
         float y;
+        friend std::ostream &operator<<(std::ostream &os, const vec2f &a)
+        {
+            os << "(" << a.x << ", " << a.y << ")";
+            return os;
+        }
+        void operator=(const vec2f &a)
+        {
+            this->x = a.x;
+            this->y = a.y;
+        }
     };
 
     struct vec2i
@@ -18,6 +28,16 @@ namespace SG
         vec2i(int x, int y): x(x), y(y) {};
         int x;
         int y;
+        friend std::ostream &operator<<(std::ostream &os, const vec2i &a)
+        {
+            os << "(" << a.x << ", " << a.y << ")";
+            return os;
+        }
+        void operator=(const vec2i &a)
+        {
+            this->x = a.x;
+            this->y = a.y;
+        }
     };
 
 

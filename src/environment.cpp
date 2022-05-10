@@ -40,6 +40,21 @@ void SG::Environment::addWindow(int sizex, int sizey,int posx, int posy, char co
     this->windows.push_back(window);
 }
 
+void SG::Environment::addWindow(Window *window)
+{
+    this->windows.push_back(window);
+}
+
+SG::Window *SG::Environment::getWindow(int index)
+{
+    if (index >= windows.size())
+    {
+        std::cerr << "Index out of range" << std::endl;
+        return nullptr;
+    }
+    return this->windows[index];
+}
+
 
 void ErrorCallback(int, const char *err_str)
 {

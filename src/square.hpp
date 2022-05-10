@@ -5,7 +5,7 @@
 
 namespace SG
 {
-    class Square : Shape
+    class Square : public Shape
     {
     public:
         Square();

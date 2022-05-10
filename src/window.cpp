@@ -2,7 +2,7 @@
 #include <stdexcept>
 
 
-SG::Window::Window(vec2i size,vec2i pos, char const *name ){
+SG::Window::Window(vec2i size,vec2i pos, char const *name ): size(size), pos(pos), windowId(windowCount++){
     window = glfwCreateWindow(size.x, size.y, name, NULL, NULL);
     glfwMakeContextCurrent(window);
     gladLoadGL();
@@ -10,11 +10,10 @@ SG::Window::Window(vec2i size,vec2i pos, char const *name ){
     {
         throw std::runtime_error("Failed to create GLFW window");
     }
-    this->size = size;
-    this->pos = pos;
+
 }
 
-SG::Window::Window(int x_size, int y_size, int x_pos , int y_pos, char const *name)
+SG::Window::Window(int x_size, int y_size, int x_pos , int y_pos, char const *name): size(x_size, y_size), pos(x_pos, y_pos), windowId(windowCount++)
 {
     window = glfwCreateWindow(x_size, y_size, name, NULL, NULL);
     glfwMakeContextCurrent(window);
@@ -23,8 +22,6 @@ SG::Window::Window(int x_size, int y_size, int x_pos , int y_pos, char const *na
     {
         throw std::runtime_error("Failed to create GLFW window");
     }
-    this->size = vec2i(x_size, y_size);
-    this->pos = vec2i(x_pos, y_pos);
 
 }
 
@@ -46,3 +43,5 @@ void SG::Window::addShape(Shape *shape)
     shapes.push_back(shape);
 }
 
+
+unsigned int SG::Window::windowCount = 0;

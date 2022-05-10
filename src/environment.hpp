@@ -5,9 +5,9 @@
 #include <GLFW/glfw3.h>
 #include <memory>
 #include <vector>
+#include <iostream>
 
 #include "window.hpp"
-
 
 namespace SG
 {
@@ -19,7 +19,17 @@ namespace SG
     public:
         Environment();
         void start();
-        void addWindow(int sizex, int sizey, int posx, int posy,  char const *name);
+        void addWindow(int sizex, int sizey, int posx, int posy, char const *name);
+        void addWindow(Window *window);
+        Window *getWindow(int index);
+        friend std::ostream &operator<<(std::ostream &os, const Environment &env)
+        {
+            for (auto it = env.windows.begin(); it < env.windows.end(); it++)
+            {
+                os << **it << std::endl;
+            }
+            return os;
+        }
     };
 
 }

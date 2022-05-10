@@ -1,6 +1,8 @@
 #include "color.hpp"
 #include <sstream>
 #include <iomanip>
+#include <stdexcept>
+
 
 SG::Color::Color()
 {
@@ -28,17 +30,17 @@ SG::Color::Color(float r, float g, float b, float a)
 
 SG::Color::Color(std::string hex)
 {
-    if (hex.size() > 10 || hex.size() < 8)
+    if (hex.size() > 10 || hex.size() < 6)
     {
-        throw "Invalid hex string";
+        throw std::invalid_argument("Invalid hex string");
     }
     if (hex.size() == 10)
     {
-        hex = hex.substr(2);// if start with 0x
+        hex = hex.substr(2); // if start with 0x
     }
     else if (hex.size() == 9)
     {
-        hex = hex.substr(1);// if start with # or x
+        hex = hex.substr(1); // if start with # or x
     }
     r = (float)std::stoi(hex.substr(0, 2), nullptr, 16) / 255;
     g = (float)std::stoi(hex.substr(2, 2), nullptr, 16) / 255;
@@ -56,50 +58,52 @@ void SG::Color::operator=(const SG::Color &newColor)
     b = newColor.b;
     a = newColor.a;
 }
+
 std::string SG::Color::toHex(float r, float g, float b)
 {
     std::stringstream ss;
     ss << std::hex << std::uppercase;
     ss << std::setfill('0');
     ss << std::setw(2);
-    ss << (int)r;
+    ss << (int)(r * 255);
     ss << std::setw(2);
-    ss << (int)g;
+    ss << int(g * 255);
     ss << std::setw(2);
-    ss << (int)b;
-    return "0x" + ss.str();
+    ss << (int)(b * 255);
+    return ss.str();
 }
+
 std::string SG::Color::toHex(float r, float g, float b, float a)
 {
     std::stringstream ss;
     ss << std::hex << std::uppercase;
     ss << std::setfill('0');
     ss << std::setw(2);
-    ss << (int)r;
+    ss << (int)(r * 255);
     ss << std::setw(2);
-    ss << (int)g;
+    ss << (int)(g * 255);
     ss << std::setw(2);
-    ss << (int)b;
+    ss << (int)(b * 255);
     ss << std::setw(2);
-    ss << (int)a;
-    return "0x" + ss.str();
+    ss << (int)(a * 255);
+    return ss.str();
 }
+
 std::string SG::Color::toHex(Color color)
 {
     std::stringstream ss;
     ss << std::hex << std::uppercase;
     ss << std::setfill('0');
     ss << std::setw(2);
-    ss << (int)color.r;
+    ss << (int)(color.r * 255);
     ss << std::setw(2);
-    ss << (int)color.g;
+    ss << (int)(color.g * 255);
     ss << std::setw(2);
-    ss << (int)color.b;
+    ss << (int)(color.b * 255);
     ss << std::setw(2);
-    ss << (int)color.a;
-    return "0x" + ss.str();
+    ss << (int)(color.a * 255);
+    return ss.str();
 }
-
 
 SG::Color SG::Color::random()
 {
@@ -108,3 +112,9 @@ SG::Color SG::Color::random()
 
 SG::Color SG::Color::white = SG::Color(1, 1, 1);
 SG::Color SG::Color::black = SG::Color(0, 0, 0);
+SG::Color SG::Color::red = SG::Color(1, 0, 0);
+SG::Color SG::Color::green = SG::Color(0, 1, 0);
+SG::Color SG::Color::blue = SG::Color(0, 0, 1);
+SG::Color SG::Color::yellow = SG::Color(1, 1, 0);
+SG::Color SG::Color::cyan = SG::Color(0, 1, 1);
+

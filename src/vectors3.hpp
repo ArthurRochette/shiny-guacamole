@@ -1,6 +1,7 @@
 #ifndef VECTORS3_HPP
 #define VECTORS3_HPP
 
+#include <iostream>
 
 namespace SG
 {
@@ -17,6 +18,11 @@ namespace SG
             this->y = a.y;
             this->z = a.z;
         }
+        friend std::ostream &operator<<(std::ostream &os, const vec3f &a)
+        {
+            os << "(" << a.x << ", " << a.y << ", " << a.z << ")";
+            return os;
+        }
     };
 
     struct vec3i
@@ -31,6 +37,11 @@ namespace SG
             this->x = a.x;
             this->y = a.y;
             this->z = a.z;
+        }
+        friend std::ostream &operator<<(std::ostream &os, const vec3i &a)
+        {
+            os << "(" << a.x << ", " << a.y << ", " << a.z << ")";
+            return os;
         }
     };
 
