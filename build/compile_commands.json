@@ -16,8 +16,8 @@
 },
 {
   "directory": "/home/arthur/work/shiny-guacamole/build",
-  "command": "/usr/bin/c++  -I/home/arthur/work/shiny-guacamole/src -I/home/arthur/work/shiny-guacamole/build/_deps/glad-build/include -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -o CMakeFiles/test.dir/src/Shape.cpp.o -c /home/arthur/work/shiny-guacamole/src/Shape.cpp",
-  "file": "/home/arthur/work/shiny-guacamole/src/Shape.cpp"
+  "command": "/usr/bin/c++  -I/home/arthur/work/shiny-guacamole/src -I/home/arthur/work/shiny-guacamole/build/_deps/glad-build/include -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -o CMakeFiles/test.dir/src/shape.cpp.o -c /home/arthur/work/shiny-guacamole/src/shape.cpp",
+  "file": "/home/arthur/work/shiny-guacamole/src/shape.cpp"
 },
 {
   "directory": "/home/arthur/work/shiny-guacamole/build",

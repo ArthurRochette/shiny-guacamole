@@ -20,7 +20,17 @@ namespace SG
         float a;
 
         void operator=(const Color &a);
+
+        static Color white;
+        static Color black;
+        static Color red;
+        static Color green;
+        static Color blue;
+        static Color yellow;
+        static Color cyan;
     };
+
+
 }
 
 #endif // COLOR_HPP

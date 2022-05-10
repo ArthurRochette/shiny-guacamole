@@ -679,33 +679,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-src/Shape.o: src/Shape.cpp.o
-
-.PHONY : src/Shape.o
-
-# target to build an object file
-src/Shape.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Shape.cpp.o
-.PHONY : src/Shape.cpp.o
-
-src/Shape.i: src/Shape.cpp.i
-
-.PHONY : src/Shape.i
-
-# target to preprocess a source file
-src/Shape.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Shape.cpp.i
-.PHONY : src/Shape.cpp.i
-
-src/Shape.s: src/Shape.cpp.s
-
-.PHONY : src/Shape.s
-
-# target to generate assembly for a file
-src/Shape.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/Shape.cpp.s
-.PHONY : src/Shape.cpp.s
-
 src/color.o: src/color.cpp.o
 
 .PHONY : src/color.o
@@ -759,6 +732,33 @@ src/environment.s: src/environment.cpp.s
 src/environment.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/environment.cpp.s
 .PHONY : src/environment.cpp.s
+
+src/shape.o: src/shape.cpp.o
+
+.PHONY : src/shape.o
+
+# target to build an object file
+src/shape.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/shape.cpp.o
+.PHONY : src/shape.cpp.o
+
+src/shape.i: src/shape.cpp.i
+
+.PHONY : src/shape.i
+
+# target to preprocess a source file
+src/shape.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/shape.cpp.i
+.PHONY : src/shape.cpp.i
+
+src/shape.s: src/shape.cpp.s
+
+.PHONY : src/shape.s
+
+# target to generate assembly for a file
+src/shape.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/shape.cpp.s
+.PHONY : src/shape.cpp.s
 
 src/window.o: src/window.cpp.o
 
@@ -839,15 +839,15 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... src/Shape.o"
-	@echo "... src/Shape.i"
-	@echo "... src/Shape.s"
 	@echo "... src/color.o"
 	@echo "... src/color.i"
 	@echo "... src/color.s"
 	@echo "... src/environment.o"
 	@echo "... src/environment.i"
 	@echo "... src/environment.s"
+	@echo "... src/shape.o"
+	@echo "... src/shape.i"
+	@echo "... src/shape.s"
 	@echo "... src/window.o"
 	@echo "... src/window.i"
 	@echo "... src/window.s"
