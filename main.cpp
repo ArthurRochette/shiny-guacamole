@@ -10,6 +10,8 @@ int main(int, char **)
     
     Environment env;
     env.addWindow(500, 500, 100, 100, "Hello World");
-    env.getWindow(0)->addShape(new Square(vec3f(200, 200, 0), vec3f(250, 250, 0)));
+    Square *square = new Square(vec3f(0.1, 0.1, 0), vec3f(0, 0, 0));
+    env.getWindow(0)->addShape(square);
     env.start();
+
 }

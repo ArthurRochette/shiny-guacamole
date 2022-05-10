@@ -12,9 +12,8 @@ SG::Environment::Environment()
         std::cerr << "Failed to initialize GLFW" << std::endl;
         return;
     }
-    glfwSetErrorCallback(ErrorCallback);
     glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
-    
+    glfwSetErrorCallback(ErrorCallback);
 }
 
 void SG::Environment::start()
@@ -30,7 +29,7 @@ void SG::Environment::start()
                 exit(EXIT_SUCCESS);
             }
         }
-        glfwWaitEvents();
+        glfwPollEvents();
     }
 }
 

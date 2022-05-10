@@ -8,7 +8,8 @@ namespace SG
     struct vec3f
     {
         vec3f() : x(0), y(0) {};
-        vec3f(float x, float y, float z) : x(x), y(y) {};
+        vec3f(float x, float y, float z) : x(x), y(y), z(z) {};
+        vec3f(vec3f const &v) : x(v.x), y(v.y), z(v.z) {};
         float x;
         float y;
         float z;
@@ -29,6 +30,8 @@ namespace SG
     {
         vec3i() : x(0), y(0), z(0) {};
         vec3i(int x, int y, int z): x(x), y(y), z(z){};
+        vec3i(vec3i const &v) : x(v.x), y(v.y), z(v.z) {};
+
         int x;
         int y;
         float z;

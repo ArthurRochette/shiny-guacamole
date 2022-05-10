@@ -14,7 +14,7 @@ namespace SG
     class Environment
     {
     private:
-        std::vector<Window *> windows; // creer une classe window pour pouvoir y stocker une fonction de render
+        std::vector<Window *> windows; 
 
     public:
         Environment();

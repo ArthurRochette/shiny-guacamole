@@ -12,7 +12,7 @@ namespace SG
     {
     public:
         Shape();
-        Shape(vec3f size, vec3f pos);
+        Shape(vec3f new_size, vec3f new_pos);
         Shape(float xSize, float ySize,float zSize, float xPos, float yPos, float zPos);
         ~Shape();
 

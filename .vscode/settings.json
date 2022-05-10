@@ -52,7 +52,8 @@
         "stop_token": "cpp",
         "thread": "cpp",
         "sstream": "cpp",
-        "iomanip": "cpp"
+        "iomanip": "cpp",
+        "cstring": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }

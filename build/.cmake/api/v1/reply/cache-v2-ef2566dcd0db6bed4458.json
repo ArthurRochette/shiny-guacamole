@@ -1107,7 +1107,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "6"
+			"value" : "8"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -1862,6 +1862,18 @@
 			"value" : ""
 		},
 		{
+			"name" : "FETCHCONTENT_SOURCE_DIR_GLM",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "When not empty, overrides where to find pre-populated content for glm"
+				}
+			],
+			"type" : "PATH",
+			"value" : ""
+		},
+		{
 			"name" : "FETCHCONTENT_UPDATES_DISCONNECTED",
 			"properties" : 
 			[
@@ -1892,6 +1904,18 @@
 				{
 					"name" : "HELPSTRING",
 					"value" : "Enables UPDATE_DISCONNECTED behavior just for population of glfw"
+				}
+			],
+			"type" : "BOOL",
+			"value" : "OFF"
+		},
+		{
+			"name" : "FETCHCONTENT_UPDATES_DISCONNECTED_GLM",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Enables UPDATE_DISCONNECTED behavior just for population of glm"
 				}
 			],
 			"type" : "BOOL",
@@ -3416,6 +3440,30 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "a40be8c2fcb8cff70b008e09b37f6755"
+		},
+		{
+			"name" : "glm_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/arthur/work/shiny-guacamole/build/_deps/glm-build"
+		},
+		{
+			"name" : "glm_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/arthur/work/shiny-guacamole/build/_deps/glm-src"
 		},
 		{
 			"name" : "test_BINARY_DIR",

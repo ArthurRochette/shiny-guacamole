@@ -9,7 +9,8 @@
 					"childIndexes" : 
 					[
 						1,
-						5
+						5,
+						6
 					],
 					"hasInstallRule" : true,
 					"minimumCMakeVersion" : 
@@ -129,6 +130,30 @@
 						7,
 						8
 					]
+				},
+				{
+					"build" : "_deps/glm-build",
+					"childIndexes" : 
+					[
+						7
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "build/_deps/glm-src"
+				},
+				{
+					"build" : "_deps/glm-build/glm",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.2"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 3,
+					"source" : "build/_deps/glm-src/glm"
 				}
 			],
 			"name" : "Debug",
@@ -138,7 +163,8 @@
 					"childIndexes" : 
 					[
 						1,
-						2
+						2,
+						3
 					],
 					"directoryIndexes" : 
 					[
@@ -208,6 +234,15 @@
 						7,
 						8
 					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6,
+						7
+					],
+					"name" : "glm",
+					"parentIndex" : 0
 				}
 			],
 			"targets" : 
@@ -397,7 +432,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test-Debug-e4215171d9450c4ff1aa.json",
+					"jsonFile" : "target-test-Debug-120a66551ade31170956.json",
 					"name" : "test",
 					"projectIndex" : 0
 				},

@@ -11,8 +11,6 @@
 
     SG::Shape::~Shape() {}
     
-    void SG::Shape::render() {}
-
     void SG::Shape::setSize(vec3f size) { this->size = size; }
 
     void SG::Shape::setPos(vec3f pos) { this->pos = pos; }
