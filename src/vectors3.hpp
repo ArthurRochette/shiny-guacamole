@@ -24,6 +24,16 @@ namespace SG
             os << "(" << a.x << ", " << a.y << ", " << a.z << ")";
             return os;
         }
+        friend vec3f operator+(const vec3f &a, const vec3f &b)
+        {
+            return vec3f(a.x + b.x, a.y + b.y, a.z + b.z);
+        }
+        friend void operator+=(vec3f &a, const vec3f &b)
+        {
+            a.x += b.x;
+            a.y += b.y;
+            a.z += b.z;
+        }
     };
 
     struct vec3i
@@ -45,6 +55,16 @@ namespace SG
         {
             os << "(" << a.x << ", " << a.y << ", " << a.z << ")";
             return os;
+        }
+        friend vec3i operator+(const vec3i &a, const vec3i &b)
+        {
+            return vec3i(a.x + b.x, a.y + b.y, a.z + b.z);
+        }
+        friend void operator+=(vec3i &a, const vec3i &b)
+        {
+            a.x += b.x;
+            a.y += b.y;
+            a.z += b.z;
         }
     };
 

@@ -53,7 +53,8 @@
         "thread": "cpp",
         "sstream": "cpp",
         "iomanip": "cpp",
-        "cstring": "cpp"
+        "cstring": "cpp",
+        "numbers": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }

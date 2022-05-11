@@ -28,6 +28,8 @@ namespace SG
         virtual unsigned int getID();
         static unsigned int counter;
 
+        //TODO faire function de mouvement + rotation
+
 
     protected:
         unsigned int id ;
