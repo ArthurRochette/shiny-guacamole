@@ -21,6 +21,7 @@ namespace SG
         void start();
         void addWindow(int sizex, int sizey, int posx, int posy, char const *name);
         void addWindow(Window *window);
+        virtual void compute();
         Window *getWindow(int index);
         friend std::ostream &operator<<(std::ostream &os, const Environment &env)
         {

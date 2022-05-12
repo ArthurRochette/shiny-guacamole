@@ -3,7 +3,7 @@
 
     SG::Shape::Shape() : id(counter++) {}
 
-    SG::Shape::Shape(vec3f size, vec3f pos) : id(counter++), size(size), pos(pos) {
+    SG::Shape::Shape(vec3f &size, vec3f &pos) : id(counter++), size(size), pos(pos) {
         color = Color(1.0f, 1.0f, 1.0f);
     }
 
@@ -28,5 +28,22 @@
     SG::Color SG::Shape::getColor() { return color; }
 
     unsigned int SG::Shape::getID() { return id; }
+
+    void SG::Shape::move(vec3f pos) { this->pos += pos; }
+
+    void SG::Shape::rotate(vec3f axis, float angle) {
+        vec3f new_pos = pos;
+        new_pos.rotate(axis, angle);
+        setPos(new_pos);
+    }
+
+    void SG::Shape::setVertexs(GLfloat *vertexs) {
+        this->vertexs = vertexs;
+    }
+
+    void SG::Shape::setColors(GLfloat *colors) {
+        this->colors = colors;
+    }
+
     
     unsigned int SG::Shape::counter = 0;

@@ -4,9 +4,11 @@
 
 using namespace SG;
 
+
+
+
 int main(int, char **)
 {
-    //TODO try to display square in window
     
     Environment env;
     env.addWindow(1000, 1000, 100, 100, "Hello World");
@@ -15,3 +17,8 @@ int main(int, char **)
     env.start();
 
 }
+
+void SG::Environment::compute(){
+    std::cout << "overload" << std::endl; // ca marche trop bi1 :0
+}
+

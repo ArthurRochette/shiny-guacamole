@@ -4,50 +4,47 @@ SG::Square::Square() : Shape() {}
 
 SG::Square::Square(vec3f new_size, vec3f new_pos) : Shape(new_size, new_pos)
 {
+    vertexs = new GLfloat[24 * 3]{
+        -size.x, -size.y, -size.z, -size.x, -size.y, size.z, -size.x, size.y, size.z, -size.x, size.y, -size.z,
+        size.x, -size.y, -size.z, size.x, -size.y, size.z, size.x, size.y, size.z, size.x, size.y, -size.z,
+        -size.x, -size.y, -size.z, -size.x, -size.y, size.z, size.x, -size.y, size.z, size.x, -size.y, -size.z,
+        -size.x, size.y, -size.z, -size.x, size.y, size.z, size.x, size.y, size.z, size.x, size.y, -size.z,
+        -size.x, -size.y, -size.z, -size.x, size.y, -size.z, size.x, size.y, -size.z, size.x, -size.y, -size.z,
+        -size.x, -size.y, size.z, -size.x, size.y, size.z, size.x, size.y, size.z, size.x, -size.y, size.z};
+
+    colors = new GLfloat[12 * 6]{
+        0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0,
+        1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0,
+        0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0,
+        0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0,
+        0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0,
+        0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1};
 }
 
-SG::Square::Square(float xSize, float ySize, float zSize, float xPos, float yPos, float zPos) : Shape(xSize, ySize, zSize, xPos, yPos, zPos) {}
+SG::Square::Square(float xSize, float ySize, float zSize, float xPos, float yPos, float zPos) : Shape(xSize, ySize, zSize, xPos, yPos, zPos)
+{
+
+    vertexs = new GLfloat[24 * 3]{
+        -size.x, -size.y, -size.z, -size.x, -size.y, size.z, -size.x, size.y, size.z, -size.x, size.y, -size.z,
+        size.x, -size.y, -size.z, size.x, -size.y, size.z, size.x, size.y, size.z, size.x, size.y, -size.z,
+        -size.x, -size.y, -size.z, -size.x, -size.y, size.z, size.x, -size.y, size.z, size.x, -size.y, -size.z,
+        -size.x, size.y, -size.z, -size.x, size.y, size.z, size.x, size.y, size.z, size.x, size.y, -size.z,
+        -size.x, -size.y, -size.z, -size.x, size.y, -size.z, size.x, size.y, -size.z, size.x, -size.y, -size.z,
+        -size.x, -size.y, size.z, -size.x, size.y, size.z, size.x, size.y, size.z, size.x, -size.y, size.z};
+
+    colors = new GLfloat[12 * 6]{
+        0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0,
+        1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0,
+        0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0,
+        0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0,
+        0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0,
+        0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1};
+}
 
 SG::Square::~Square() {}
 
-GLfloat *SG::Square::deplacer(GLfloat *vertices)
-{
-    for (int i = 0; i < 72; i+=3)
-    {
-        vertices[i] += pos.x;
-        vertices[i+1] += pos.y;
-        vertices[i+2] += pos.z;
-
-        std::cout << vertices[i+0] << std::endl;
-        std::cout << vertices[i+1] << std::endl;
-        std::cout << vertices[i+2] << std::endl;
-    }
-    return vertices;
-}
-
 void SG::Square::render()
 {
-    GLfloat vertices[] =
-        {
-            -0.1, -0.1, -0.1, -0.1, -0.1, 0.1, -0.1, 0.1, 0.1, -0.1, 0.1, -0.1,
-            0.1, -0.1, -0.1, 0.1, -0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, -0.1,
-            -0.1, -0.1, -0.1, -0.1, -0.1, 0.1, 0.1, -0.1, 0.1, 0.1, -0.1, -0.1,
-            -0.1, 0.1, -0.1, -0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, -0.1,
-            -0.1, -0.1, -0.1, -0.1, 0.1, -0.1, 0.1, 0.1, -0.1, 0.1, -0.1, -0.1,
-            -0.1, -0.1, 0.1, -0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, -0.1, 0.1
-        };
-    
-    GLfloat *ptr;
-    ptr = deplacer(vertices);
-
-    GLfloat colors[] =
-        {
-            0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0,
-            1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0,
-            0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0,
-            0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0,
-            0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0,
-            0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1};
 
     static float alpha = 0;
     // attempt to rotate cube
@@ -55,7 +52,7 @@ void SG::Square::render()
     /* We have a color array and a vertex array */
     glEnableClientState(GL_VERTEX_ARRAY);
     glEnableClientState(GL_COLOR_ARRAY);
-    glVertexPointer(3, GL_FLOAT, 0, vertices);
+    glVertexPointer(3, GL_FLOAT, 0, vertexs);
     glColorPointer(3, GL_FLOAT, 0, colors);
 
     /* Send data : 24 vertices */
@@ -66,7 +63,7 @@ void SG::Square::render()
     glDisableClientState(GL_VERTEX_ARRAY);
     alpha += 1;
     /*
-    pos.z += 0.001;//FIXME profondeur ne marche pas
+    pos.z += 0.001;
     std::cout << pos.z << std::endl;
 
     glBegin(GL_QUADS);

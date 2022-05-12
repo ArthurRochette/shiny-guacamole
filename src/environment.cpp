@@ -23,6 +23,7 @@ void SG::Environment::start()
         for(auto it = windows.begin(); it < windows.end(); it++){
             
             (*it)->render();
+            compute();
             
             if(glfwWindowShouldClose((*it)->getWindow())){
                 glfwTerminate();

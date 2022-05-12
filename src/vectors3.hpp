@@ -13,6 +13,11 @@ namespace SG
         float x;
         float y;
         float z;
+        void rotate(vec3f axis, float angle){
+            return;
+
+        }
+        
         void operator=(const vec3f &a)
         {
             this->x = a.x;
