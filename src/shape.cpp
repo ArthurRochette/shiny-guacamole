@@ -29,7 +29,12 @@
 
     unsigned int SG::Shape::getID() { return id; }
 
-    void SG::Shape::move(vec3f pos) { this->pos += pos; }
+    void SG::Shape::move(vec3f pos) { 
+        std::cerr << "Shape::move()" << std::endl;
+        std::cerr << "pos: " << this->pos << std::endl;
+        this->pos += pos; 
+        //TODO
+    }
 
     void SG::Shape::rotate(vec3f axis, float angle) {
         vec3f new_pos = pos;
@@ -37,11 +42,11 @@
         setPos(new_pos);
     }
 
-    void SG::Shape::setVertexs(GLfloat *vertexs) {
+    void SG::Shape::setVertexs(MagicArray<GLfloat> &vertexs) {
         this->vertexs = vertexs;
     }
 
-    void SG::Shape::setColors(GLfloat *colors) {
+    void SG::Shape::setColors(MagicArray<GLfloat> &colors) {
         this->colors = colors;
     }
 

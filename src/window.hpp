@@ -20,6 +20,7 @@ namespace SG
         void render();
         void addShape(Shape *shape);
         GLFWwindow *const getWindow();
+        Shape* getShape(int i);
         friend std::ostream &operator<<(std::ostream &os, const Window &win)
         {
             os << "Window: " << win.size << " " << win.pos << std::endl;

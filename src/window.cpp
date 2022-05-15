@@ -29,11 +29,11 @@ SG::Window::Window(int x_size, int y_size, int x_pos , int y_pos, char const *na
     {
         throw std::runtime_error("Failed to create GLFW window");
     }
+    glViewport(0, 0, x_size, y_size);
     glEnable(GL_DEPTH_TEST);
-    glDisable(GL_CLIP_DISTANCE0);
+    glDepthMask(GL_TRUE);
     glDepthFunc(GL_LESS);
-    glMatrixMode(GL_PROJECTION);
-    glLoadIdentity();
+    glDepthRange(0.0f, 1.0f);
     
 }
 
@@ -59,5 +59,9 @@ void SG::Window::addShape(Shape *shape)
     shapes.push_back(shape);
 }
 
+SG::Shape* SG::Window::getShape(int i)
+{
+    return shapes[i];
+}
 
 unsigned int SG::Window::windowCount = 0;

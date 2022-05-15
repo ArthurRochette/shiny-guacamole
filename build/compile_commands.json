@@ -141,12 +141,12 @@
 },
 {
   "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/examples",
-  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/offscreen.dir/offscreen.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/examples/offscreen.c",
-  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/examples/offscreen.c"
+  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/sharing.dir/sharing.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/examples/sharing.c",
+  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/examples/sharing.c"
 },
 {
   "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/examples",
-  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/offscreen.dir/__/deps/glad_gl.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c",
+  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/sharing.dir/__/deps/glad_gl.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c",
   "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c"
 },
 {
@@ -171,16 +171,6 @@
 },
 {
   "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/examples",
-  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/sharing.dir/sharing.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/examples/sharing.c",
-  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/examples/sharing.c"
-},
-{
-  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/examples",
-  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/sharing.dir/__/deps/glad_gl.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c",
-  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c"
-},
-{
-  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/examples",
   "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/simple.dir/simple.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/examples/simple.c",
   "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/examples/simple.c"
 },
@@ -201,12 +191,62 @@
 },
 {
   "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/examples",
+  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/offscreen.dir/offscreen.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/examples/offscreen.c",
+  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/examples/offscreen.c"
+},
+{
+  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/examples",
+  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/offscreen.dir/__/deps/glad_gl.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c",
+  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c"
+},
+{
+  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/examples",
   "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/wave.dir/wave.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/examples/wave.c",
   "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/examples/wave.c"
 },
 {
   "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/examples",
   "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/wave.dir/__/deps/glad_gl.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c",
+  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c"
+},
+{
+  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
+  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/triangle-vulkan.c",
+  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/triangle-vulkan.c"
+},
+{
+  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
+  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/triangle-vulkan.dir/__/deps/glad_vulkan.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_vulkan.c",
+  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_vulkan.c"
+},
+{
+  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
+  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/tearing.dir/tearing.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/tearing.c",
+  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/tearing.c"
+},
+{
+  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
+  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/tearing.dir/__/deps/glad_gl.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c",
+  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c"
+},
+{
+  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
+  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/title.dir/title.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/title.c",
+  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/title.c"
+},
+{
+  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
+  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/title.dir/__/deps/glad_gl.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c",
+  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c"
+},
+{
+  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
+  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/opacity.dir/opacity.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/opacity.c",
+  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/opacity.c"
+},
+{
+  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
+  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/opacity.dir/__/deps/glad_gl.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c",
   "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c"
 },
 {
@@ -222,21 +262,6 @@
 {
   "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
   "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/clipboard.dir/__/deps/glad_gl.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c",
-  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c"
-},
-{
-  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
-  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/events.dir/events.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/events.c",
-  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/events.c"
-},
-{
-  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
-  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/events.dir/__/deps/getopt.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/getopt.c",
-  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/getopt.c"
-},
-{
-  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
-  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/events.dir/__/deps/glad_gl.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c",
   "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c"
 },
 {
@@ -291,6 +316,26 @@
 },
 {
   "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
+  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/reopen.dir/reopen.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/reopen.c",
+  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/reopen.c"
+},
+{
+  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
+  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/reopen.dir/__/deps/glad_gl.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c",
+  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c"
+},
+{
+  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
+  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/gamma.dir/gamma.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/gamma.c",
+  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/gamma.c"
+},
+{
+  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
+  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/gamma.dir/__/deps/glad_gl.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c",
+  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c"
+},
+{
+  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
   "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/monitors.dir/monitors.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/monitors.c",
   "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/monitors.c"
 },
@@ -306,12 +351,57 @@
 },
 {
   "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
-  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/reopen.dir/reopen.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/reopen.c",
-  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/reopen.c"
+  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/windows.dir/windows.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/windows.c",
+  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/windows.c"
 },
 {
   "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
-  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/reopen.dir/__/deps/glad_gl.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c",
+  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/windows.dir/__/deps/getopt.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/getopt.c",
+  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/getopt.c"
+},
+{
+  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
+  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/windows.dir/__/deps/glad_gl.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c",
+  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c"
+},
+{
+  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
+  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/timeout.dir/timeout.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/timeout.c",
+  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/timeout.c"
+},
+{
+  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
+  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/timeout.dir/__/deps/glad_gl.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c",
+  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c"
+},
+{
+  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
+  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/inputlag.dir/inputlag.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/inputlag.c",
+  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/inputlag.c"
+},
+{
+  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
+  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/inputlag.dir/__/deps/getopt.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/getopt.c",
+  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/getopt.c"
+},
+{
+  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
+  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/inputlag.dir/__/deps/glad_gl.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c",
+  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c"
+},
+{
+  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
+  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/threads.dir/threads.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/threads.c",
+  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/threads.c"
+},
+{
+  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
+  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/threads.dir/__/deps/tinycthread.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/tinycthread.c",
+  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/tinycthread.c"
+},
+{
+  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
+  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/threads.dir/__/deps/glad_gl.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c",
   "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c"
 },
 {
@@ -341,16 +431,6 @@
 },
 {
   "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
-  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/gamma.dir/gamma.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/gamma.c",
-  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/gamma.c"
-},
-{
-  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
-  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/gamma.dir/__/deps/glad_gl.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c",
-  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c"
-},
-{
-  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
   "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/icon.dir/icon.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/icon.c",
   "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/icon.c"
 },
@@ -361,17 +441,17 @@
 },
 {
   "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
-  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/inputlag.dir/inputlag.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/inputlag.c",
-  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/inputlag.c"
+  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/events.dir/events.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/events.c",
+  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/events.c"
 },
 {
   "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
-  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/inputlag.dir/__/deps/getopt.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/getopt.c",
+  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/events.dir/__/deps/getopt.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/getopt.c",
   "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/getopt.c"
 },
 {
   "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
-  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/inputlag.dir/__/deps/glad_gl.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c",
+  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/events.dir/__/deps/glad_gl.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c",
   "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c"
 },
 {
@@ -382,86 +462,6 @@
 {
   "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
   "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/joysticks.dir/__/deps/glad_gl.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c",
-  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c"
-},
-{
-  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
-  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/opacity.dir/opacity.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/opacity.c",
-  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/opacity.c"
-},
-{
-  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
-  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/opacity.dir/__/deps/glad_gl.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c",
-  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c"
-},
-{
-  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
-  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/tearing.dir/tearing.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/tearing.c",
-  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/tearing.c"
-},
-{
-  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
-  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/tearing.dir/__/deps/glad_gl.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c",
-  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c"
-},
-{
-  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
-  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/threads.dir/threads.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/threads.c",
-  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/threads.c"
-},
-{
-  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
-  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/threads.dir/__/deps/tinycthread.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/tinycthread.c",
-  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/tinycthread.c"
-},
-{
-  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
-  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/threads.dir/__/deps/glad_gl.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c",
-  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c"
-},
-{
-  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
-  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/timeout.dir/timeout.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/timeout.c",
-  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/timeout.c"
-},
-{
-  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
-  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/timeout.dir/__/deps/glad_gl.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c",
-  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c"
-},
-{
-  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
-  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/title.dir/title.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/title.c",
-  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/title.c"
-},
-{
-  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
-  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/title.dir/__/deps/glad_gl.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c",
-  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c"
-},
-{
-  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
-  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/triangle-vulkan.c",
-  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/triangle-vulkan.c"
-},
-{
-  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
-  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/triangle-vulkan.dir/__/deps/glad_vulkan.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_vulkan.c",
-  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_vulkan.c"
-},
-{
-  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
-  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/windows.dir/windows.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/windows.c",
-  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/tests/windows.c"
-},
-{
-  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
-  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/windows.dir/__/deps/getopt.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/getopt.c",
-  "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/getopt.c"
-},
-{
-  "directory": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-build/tests",
-  "command": "/usr/bin/cc  -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps -I/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/include -g -std=gnu99 -o CMakeFiles/windows.dir/__/deps/glad_gl.c.o -c /home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c",
   "file": "/home/arthur/work/shiny-guacamole/build/_deps/glfw-src/deps/glad_gl.c"
 },
 {

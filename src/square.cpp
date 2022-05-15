@@ -4,13 +4,14 @@ SG::Square::Square() : Shape() {}
 
 SG::Square::Square(vec3f new_size, vec3f new_pos) : Shape(new_size, new_pos)
 {
+    //TODO change 
     vertexs = new GLfloat[24 * 3]{
-        -size.x, -size.y, -size.z, -size.x, -size.y, size.z, -size.x, size.y, size.z, -size.x, size.y, -size.z,
-        size.x, -size.y, -size.z, size.x, -size.y, size.z, size.x, size.y, size.z, size.x, size.y, -size.z,
-        -size.x, -size.y, -size.z, -size.x, -size.y, size.z, size.x, -size.y, size.z, size.x, -size.y, -size.z,
-        -size.x, size.y, -size.z, -size.x, size.y, size.z, size.x, size.y, size.z, size.x, size.y, -size.z,
-        -size.x, -size.y, -size.z, -size.x, size.y, -size.z, size.x, size.y, -size.z, size.x, -size.y, -size.z,
-        -size.x, -size.y, size.z, -size.x, size.y, size.z, size.x, size.y, size.z, size.x, -size.y, size.z};
+        -size.x + pos.x, -size.y + pos.y, -size.z + pos.z, -size.x + pos.x, -size.y  + pos.y,  size.z + pos.z, -size.x + pos.x,  size.y + pos.y,  size.z + pos.z, -size.x + pos.x,  size.y + pos.y , -size.z + pos.z,
+         size.x + pos.x, -size.y + pos.y, -size.z + pos.z,  size.x + pos.x, -size.y  + pos.y,  size.z + pos.z,  size.x + pos.x,  size.y + pos.y,  size.z + pos.z,  size.x + pos.x,  size.y + pos.y , -size.z + pos.z,
+        -size.x + pos.x, -size.y + pos.y, -size.z + pos.z, -size.x + pos.x, -size.y  + pos.y,  size.z + pos.z,  size.x + pos.x, -size.y + pos.y,  size.z + pos.z,  size.x + pos.x, -size.y + pos.y , -size.z + pos.z,
+        -size.x + pos.x,  size.y + pos.y, -size.z + pos.z, -size.x + pos.x,  size.y  + pos.y,  size.z + pos.z,  size.x + pos.x,  size.y + pos.y,  size.z + pos.z,  size.x + pos.x,  size.y + pos.y , -size.z + pos.z,
+        -size.x + pos.x, -size.y + pos.y, -size.z + pos.z, -size.x + pos.x,  size.y  + pos.y, -size.z + pos.z,  size.x + pos.x,  size.y + pos.y, -size.z + pos.z,  size.x + pos.x, -size.y + pos.y , -size.z + pos.z,
+        -size.x + pos.x, -size.y + pos.y,  size.z + pos.z, -size.x + pos.x,  size.y  + pos.y,  size.z + pos.z,  size.x + pos.x,  size.y + pos.y,  size.z + pos.z,  size.x + pos.x, -size.y + pos.y ,  size.z + pos.z};
 
     colors = new GLfloat[12 * 6]{
         0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0,
@@ -18,7 +19,8 @@ SG::Square::Square(vec3f new_size, vec3f new_pos) : Shape(new_size, new_pos)
         0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0,
         0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0,
         0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0,
-        0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1};
+        0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1
+    };
 }
 
 SG::Square::Square(float xSize, float ySize, float zSize, float xPos, float yPos, float zPos) : Shape(xSize, ySize, zSize, xPos, yPos, zPos)
@@ -26,11 +28,11 @@ SG::Square::Square(float xSize, float ySize, float zSize, float xPos, float yPos
 
     vertexs = new GLfloat[24 * 3]{
         -size.x, -size.y, -size.z, -size.x, -size.y, size.z, -size.x, size.y, size.z, -size.x, size.y, -size.z,
-        size.x, -size.y, -size.z, size.x, -size.y, size.z, size.x, size.y, size.z, size.x, size.y, -size.z,
+         size.x, -size.y, -size.z,  size.x, -size.y, size.z, size.x, size.y, size.z, size.x, size.y, -size.z,
         -size.x, -size.y, -size.z, -size.x, -size.y, size.z, size.x, -size.y, size.z, size.x, -size.y, -size.z,
-        -size.x, size.y, -size.z, -size.x, size.y, size.z, size.x, size.y, size.z, size.x, size.y, -size.z,
-        -size.x, -size.y, -size.z, -size.x, size.y, -size.z, size.x, size.y, -size.z, size.x, -size.y, -size.z,
-        -size.x, -size.y, size.z, -size.x, size.y, size.z, size.x, size.y, size.z, size.x, -size.y, size.z};
+        -size.x,  size.y, -size.z, -size.x,  size.y,  size.z, size.x, size.y, size.z, size.x, size.y, -size.z,
+        -size.x, -size.y, -size.z, -size.x,  size.y, -size.z, size.x, size.y, -size.z, size.x, -size.y, -size.z,
+        -size.x, -size.y,  size.z, -size.x,  size.y,  size.z, size.x, size.y, size.z, size.x, -size.y, size.z};
 
     colors = new GLfloat[12 * 6]{
         0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0,
