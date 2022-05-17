@@ -33,7 +33,7 @@
         std::cerr << "Shape::move()" << std::endl;
         std::cerr << "pos: " << this->pos << std::endl;
         this->pos += pos; 
-        //TODO
+        this->vertexs += pos;
     }
 
     void SG::Shape::rotate(vec3f axis, float angle) {

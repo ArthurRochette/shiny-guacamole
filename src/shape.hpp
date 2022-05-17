@@ -41,7 +41,7 @@ namespace SG
 
 
     protected:
-        unsigned int id ;
+        unsigned int id;
         vec3f size;
         vec3f pos;
         Color color;

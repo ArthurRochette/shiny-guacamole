@@ -1,5 +1,8 @@
 #ifndef MagicArray_HPP
 #define MagicArray_HPP
+
+#include "vectors3.hpp"
+
 namespace SG{
 template <typename T>
 struct MagicArray
@@ -113,6 +116,30 @@ struct MagicArray
         }
         return result;
     }
+    friend void operator+=(MagicArray<T> &a, MagicArray<T> &b)
+    {
+        for (int i = 0; i < a.getSize(); i++)
+        {
+            a[i] += b[i];
+        }
+    }
+    friend void operator-=(MagicArray<T> &a, MagicArray<T> &b)
+    {
+        for (int i = 0; i < a.getSize(); i++)
+        {
+            a[i] -= b[i];
+        }
+    }
+    friend void operator+=(MagicArray<T> *a, vec3f &b)
+    {
+        for (int i = 0; i < a->getSize(); i+=3)
+        {
+            a->data[i] += b.x;
+            a->data[i+1] += b.y;
+            a->data[i+2] += b.z;
+        }
+    }
+    
 
     T *data;
     size_t size;

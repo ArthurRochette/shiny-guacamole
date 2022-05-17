@@ -19,8 +19,8 @@ int main(int, char **)
 }
 
 void SG::Environment::compute(){
-    //getWindow(0)->getShape(0)->move(vec3f(0.1, 0.1, 0));
-    std::cout << getWindow(0)->getShape(0)->getPos() << std::endl;
+    getWindow(0)->getShape(0)->move(vec3f(0.1, 0.1, 0));
+    //std::cout << getWindow(0)->getShape(0)->getPos() << std::endl;
     return;
 }
 
