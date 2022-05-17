@@ -43,11 +43,11 @@
     }
 
     void SG::Shape::setVertexs(MagicArray<GLfloat> &vertexs) {
-        this->vertexs = vertexs;
+        this->vertexs = &vertexs;//FIXME potential risk of failure
     }
 
     void SG::Shape::setColors(MagicArray<GLfloat> &colors) {
-        this->colors = colors;
+        this->colors = &colors;
     }
 
     
