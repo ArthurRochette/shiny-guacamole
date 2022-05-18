@@ -2,7 +2,7 @@
 
 SG::Square::Square() : Shape() {}
 
-SG::Square::Square(vec3f new_size, vec3f new_pos) : Shape(new_size, new_pos)
+SG::Square::Square(Vec3f new_size, Vec3f new_pos) : Shape(new_size, new_pos)
 {
     //TODO change 
     vertexs = new GLfloat[24 * 3]{
@@ -23,7 +23,7 @@ SG::Square::Square(vec3f new_size, vec3f new_pos) : Shape(new_size, new_pos)
     };
 }
 
-SG::Square::Square(float xSize, float ySize, float zSize, float xPos, float yPos, float zPos) : Shape(xSize, ySize, zSize, xPos, yPos, zPos)
+SG::Square::Square(float xSize, float ySize, float zSize, float xPosition, float yPosition, float zPosition) : Shape(xSize, ySize, zSize, xPosition, yPosition, zPosition)
 {
 
     vertexs = new GLfloat[24 * 3]{

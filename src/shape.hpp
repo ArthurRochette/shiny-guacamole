@@ -13,24 +13,24 @@ namespace SG
     {
     public:
         Shape();
-        Shape(vec3f &new_size, vec3f &new_pos);
-        Shape(float xSize, float ySize,float zSize, float xPos, float yPos, float zPos);
+        Shape(Vec3f &new_size, Vec3f &new_pos);
+        Shape(float xSize, float ySize,float zSize, float xPosition, float yPosition, float zPosition);
         ~Shape();
 
         virtual void render() = 0;
-        virtual void setSize(vec3f size);
-        virtual void setPos(vec3f pos);
+        virtual void setSize(Vec3f size);
+        virtual void setPosition(Vec3f pos);
         virtual void setSize(float xSize, float ySize, float zSize);
-        virtual void setPos(float xPos, float yPos, float zPos);
+        virtual void setPosition(float xPosition, float yPosition, float zPosition);
         virtual void setColors(MagicArray<GLfloat> &colors);
         virtual void setVertexs(MagicArray<GLfloat> &vertexs);
-        virtual vec3f getSize();
-        virtual vec3f getPos();
+        virtual Vec3f getSize();
+        virtual Vec3f getPosition();
         virtual void setColor(Color color);
         virtual Color getColor();
         virtual unsigned int getID();
-        virtual void move(vec3f pos);
-        virtual void rotate(vec3f axis, float angle);
+        virtual void move(Vec3f pos);
+        virtual void rotate(Vec3f axis, float angle);
         
         static unsigned int counter;
 
@@ -41,8 +41,8 @@ namespace SG
 
     protected:
         unsigned int id ;
-        vec3f size;
-        vec3f pos;
+        Vec3f size;
+        Vec3f pos;
         Color color;
         MagicArray<GLfloat> vertexs;
         MagicArray<GLfloat> colors;

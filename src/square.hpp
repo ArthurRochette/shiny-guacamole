@@ -9,8 +9,8 @@ namespace SG
     {
     public:
         Square();
-        Square(vec3f size, vec3f pos);
-        Square(float xSize, float ySize, float zSize, float xPos, float yPos, float zPos);
+        Square(Vec3f size, Vec3f pos);
+        Square(float xSize, float ySize, float zSize, float xPosition, float yPosition, float zPosition);
         ~Square();
     
 

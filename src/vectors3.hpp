@@ -5,35 +5,35 @@
 
 namespace SG
 {
-    struct vec3f
+    struct Vec3f
     {
-        vec3f() : x(0), y(0) {};
-        vec3f(float x, float y, float z) : x(x), y(y), z(z) {};
-        vec3f(vec3f const &v) : x(v.x), y(v.y), z(v.z) {};
+        Vec3f() : x(0), y(0) {};
+        Vec3f(float x, float y, float z) : x(x), y(y), z(z) {};
+        Vec3f(Vec3f const &v) : x(v.x), y(v.y), z(v.z) {};
         float x;
         float y;
         float z;
-        void rotate(vec3f axis, float angle){
+        void rotate(Vec3f axis, float angle){
             return;
 
         }
         
-        void operator=(const vec3f &a)
+        void operator=(const Vec3f &a)
         {
             this->x = a.x;
             this->y = a.y;
             this->z = a.z;
         }
-        friend std::ostream &operator<<(std::ostream &os, const vec3f &a)
+        friend std::ostream &operator<<(std::ostream &os, const Vec3f &a)
         {
             os << "(" << a.x << ", " << a.y << ", " << a.z << ")";
             return os;
         }
-        friend vec3f operator+(const vec3f &a, const vec3f &b)
+        friend Vec3f operator+(const Vec3f &a, const Vec3f &b)
         {
-            return vec3f(a.x + b.x, a.y + b.y, a.z + b.z);
+            return Vec3f(a.x + b.x, a.y + b.y, a.z + b.z);
         }
-        friend void operator+=(vec3f &a, const vec3f &b)
+        friend void operator+=(Vec3f &a, const Vec3f &b)
         {
             a.x += b.x;
             a.y += b.y;
@@ -41,31 +41,31 @@ namespace SG
         }
     };
 
-    struct vec3i
+    struct Vec3i
     {
-        vec3i() : x(0), y(0), z(0) {};
-        vec3i(int x, int y, int z): x(x), y(y), z(z){};
-        vec3i(vec3i const &v) : x(v.x), y(v.y), z(v.z) {};
+        Vec3i() : x(0), y(0), z(0) {};
+        Vec3i(int x, int y, int z): x(x), y(y), z(z){};
+        Vec3i(Vec3i const &v) : x(v.x), y(v.y), z(v.z) {};
 
         int x;
         int y;
         float z;
-        void operator=(vec3i &a)
+        void operator=(Vec3i &a)
         {
             this->x = a.x;
             this->y = a.y;
             this->z = a.z;
         }
-        friend std::ostream &operator<<(std::ostream &os, const vec3i &a)
+        friend std::ostream &operator<<(std::ostream &os, const Vec3i &a)
         {
             os << "(" << a.x << ", " << a.y << ", " << a.z << ")";
             return os;
         }
-        friend vec3i operator+(const vec3i &a, const vec3i &b)
+        friend Vec3i operator+(const Vec3i &a, const Vec3i &b)
         {
-            return vec3i(a.x + b.x, a.y + b.y, a.z + b.z);
+            return Vec3i(a.x + b.x, a.y + b.y, a.z + b.z);
         }
-        friend void operator+=(vec3i &a, const vec3i &b)
+        friend void operator+=(Vec3i &a, const Vec3i &b)
         {
             a.x += b.x;
             a.y += b.y;
