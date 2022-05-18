@@ -4,43 +4,44 @@ SG::Square::Square() : Shape() {}
 
 SG::Square::Square(Vec3f new_size, Vec3f new_pos) : Shape(new_size, new_pos)
 {
-    //TODO change 
-    vertexs = new GLfloat[24 * 3]{
+    vertexs = new MagicArray<GLfloat>(new GLfloat[6*12]{
         -size.x + pos.x, -size.y + pos.y, -size.z + pos.z, -size.x + pos.x, -size.y  + pos.y,  size.z + pos.z, -size.x + pos.x,  size.y + pos.y,  size.z + pos.z, -size.x + pos.x,  size.y + pos.y , -size.z + pos.z,
          size.x + pos.x, -size.y + pos.y, -size.z + pos.z,  size.x + pos.x, -size.y  + pos.y,  size.z + pos.z,  size.x + pos.x,  size.y + pos.y,  size.z + pos.z,  size.x + pos.x,  size.y + pos.y , -size.z + pos.z,
         -size.x + pos.x, -size.y + pos.y, -size.z + pos.z, -size.x + pos.x, -size.y  + pos.y,  size.z + pos.z,  size.x + pos.x, -size.y + pos.y,  size.z + pos.z,  size.x + pos.x, -size.y + pos.y , -size.z + pos.z,
         -size.x + pos.x,  size.y + pos.y, -size.z + pos.z, -size.x + pos.x,  size.y  + pos.y,  size.z + pos.z,  size.x + pos.x,  size.y + pos.y,  size.z + pos.z,  size.x + pos.x,  size.y + pos.y , -size.z + pos.z,
         -size.x + pos.x, -size.y + pos.y, -size.z + pos.z, -size.x + pos.x,  size.y  + pos.y, -size.z + pos.z,  size.x + pos.x,  size.y + pos.y, -size.z + pos.z,  size.x + pos.x, -size.y + pos.y , -size.z + pos.z,
-        -size.x + pos.x, -size.y + pos.y,  size.z + pos.z, -size.x + pos.x,  size.y  + pos.y,  size.z + pos.z,  size.x + pos.x,  size.y + pos.y,  size.z + pos.z,  size.x + pos.x, -size.y + pos.y ,  size.z + pos.z};
+        -size.x + pos.x, -size.y + pos.y,  size.z + pos.z, -size.x + pos.x,  size.y  + pos.y,  size.z + pos.z,  size.x + pos.x,  size.y + pos.y,  size.z + pos.z,  size.x + pos.x, -size.y + pos.y ,  size.z + pos.z}
+        , 6*12 );
 
-    colors = new GLfloat[12 * 6]{
+    colors = new MagicArray<GLfloat>(new GLfloat[12 * 6]{
         0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0,
         1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0,
         0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0,
         0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0,
         0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0,
         0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1
-    };
+    }, 12*6);
 }
 
 SG::Square::Square(float xSize, float ySize, float zSize, float xPosition, float yPosition, float zPosition) : Shape(xSize, ySize, zSize, xPosition, yPosition, zPosition)
 {
+    vertexs = new MagicArray<GLfloat>(new GLfloat[6*12]{
+        -size.x + pos.x, -size.y + pos.y, -size.z + pos.z, -size.x + pos.x, -size.y  + pos.y,  size.z + pos.z, -size.x + pos.x,  size.y + pos.y,  size.z + pos.z, -size.x + pos.x,  size.y + pos.y , -size.z + pos.z,
+         size.x + pos.x, -size.y + pos.y, -size.z + pos.z,  size.x + pos.x, -size.y  + pos.y,  size.z + pos.z,  size.x + pos.x,  size.y + pos.y,  size.z + pos.z,  size.x + pos.x,  size.y + pos.y , -size.z + pos.z,
+        -size.x + pos.x, -size.y + pos.y, -size.z + pos.z, -size.x + pos.x, -size.y  + pos.y,  size.z + pos.z,  size.x + pos.x, -size.y + pos.y,  size.z + pos.z,  size.x + pos.x, -size.y + pos.y , -size.z + pos.z,
+        -size.x + pos.x,  size.y + pos.y, -size.z + pos.z, -size.x + pos.x,  size.y  + pos.y,  size.z + pos.z,  size.x + pos.x,  size.y + pos.y,  size.z + pos.z,  size.x + pos.x,  size.y + pos.y , -size.z + pos.z,
+        -size.x + pos.x, -size.y + pos.y, -size.z + pos.z, -size.x + pos.x,  size.y  + pos.y, -size.z + pos.z,  size.x + pos.x,  size.y + pos.y, -size.z + pos.z,  size.x + pos.x, -size.y + pos.y , -size.z + pos.z,
+        -size.x + pos.x, -size.y + pos.y,  size.z + pos.z, -size.x + pos.x,  size.y  + pos.y,  size.z + pos.z,  size.x + pos.x,  size.y + pos.y,  size.z + pos.z,  size.x + pos.x, -size.y + pos.y ,  size.z + pos.z}
+        , 6*12 );
 
-    vertexs = new GLfloat[24 * 3]{
-        -size.x, -size.y, -size.z, -size.x, -size.y, size.z, -size.x, size.y, size.z, -size.x, size.y, -size.z,
-         size.x, -size.y, -size.z,  size.x, -size.y, size.z, size.x, size.y, size.z, size.x, size.y, -size.z,
-        -size.x, -size.y, -size.z, -size.x, -size.y, size.z, size.x, -size.y, size.z, size.x, -size.y, -size.z,
-        -size.x,  size.y, -size.z, -size.x,  size.y,  size.z, size.x, size.y, size.z, size.x, size.y, -size.z,
-        -size.x, -size.y, -size.z, -size.x,  size.y, -size.z, size.x, size.y, -size.z, size.x, -size.y, -size.z,
-        -size.x, -size.y,  size.z, -size.x,  size.y,  size.z, size.x, size.y, size.z, size.x, -size.y, size.z};
-
-    colors = new GLfloat[12 * 6]{
+    colors = new MagicArray<GLfloat>(new GLfloat[12 * 6]{
         0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0,
         1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0,
         0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0,
         0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0,
         0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0,
-        0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1};
+        0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1
+    }, 12*6);
 }
 
 SG::Square::~Square() {}
@@ -54,8 +55,8 @@ void SG::Square::render()
     /* We have a color array and a vertex array */
     glEnableClientState(GL_VERTEX_ARRAY);
     glEnableClientState(GL_COLOR_ARRAY);
-    glVertexPointer(3, GL_FLOAT, 0, vertexs);
-    glColorPointer(3, GL_FLOAT, 0, colors);
+    glVertexPointer(3, GL_FLOAT, 0, vertexs->data);
+    glColorPointer(3, GL_FLOAT, 0, colors->data);
 
     /* Send data : 24 vertices */
     glDrawArrays(GL_QUADS, 0, 24);

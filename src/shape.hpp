@@ -29,8 +29,9 @@ namespace SG
         virtual void setColor(Color color);
         virtual Color getColor();
         virtual unsigned int getID();
-        virtual void move(Vec3f pos);
-        virtual void rotate(Vec3f axis, float angle);
+        
+        virtual void move(vec3f pos);
+        virtual void rotate(vec3f axis, float angle);
         
         static unsigned int counter;
 
@@ -40,12 +41,12 @@ namespace SG
 
 
     protected:
-        unsigned int id ;
-        Vec3f size;
-        Vec3f pos;
+        unsigned int id;
+        vec3f size;
+        vec3f pos;
         Color color;
-        MagicArray<GLfloat> vertexs;
-        MagicArray<GLfloat> colors;
+        MagicArray<GLfloat> *vertexs;
+        MagicArray<GLfloat> *colors;
     };
 
 };

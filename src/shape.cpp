@@ -33,7 +33,7 @@
         std::cerr << "Shape::move()" << std::endl;
         std::cerr << "pos: " << this->pos << std::endl;
         this->pos += pos; 
-        //TODO
+        this->vertexs += pos;
     }
 
     void SG::Shape::rotate(Vec3f axis, float angle) {
@@ -43,11 +43,11 @@
     }
 
     void SG::Shape::setVertexs(MagicArray<GLfloat> &vertexs) {
-        this->vertexs = vertexs;
+        this->vertexs = &vertexs;//FIXME potential risk of failure
     }
 
     void SG::Shape::setColors(MagicArray<GLfloat> &colors) {
-        this->colors = colors;
+        this->colors = &colors;
     }
 
     
