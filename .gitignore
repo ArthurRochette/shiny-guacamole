@@ -3,3 +3,4 @@ main
 CMakeFiles/
 _deps/
 build/
+.vscode/
