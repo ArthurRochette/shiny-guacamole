@@ -1,34 +1,9 @@
 cmake_minimum_required(VERSION 3.0.0)
 project(test VERSION 0.1.0)
 
-include(FetchContent)
-set(BUILD_SHARED_LIBS OFF)
-
-FetchContent_Declare(
-        glfw
-        GIT_REPOSITORY https://github.com/glfw/glfw.git
-        GIT_TAG 3.3.7
-)
-FetchContent_Declare(
-        glad
-        GIT_REPOSITORY https://github.com/Dav1dde/glad.git
-)
-FetchContent_Declare(
-        glm
-        GIT_REPOSITORY https://github.com/g-truc/glm.git
-)
-
-FetchContent_MakeAvailable(glfw)
-FetchContent_MakeAvailable(glad)
-FetchContent_MakeAvailable(glm)
+include_directories(./shiny-guacamole/includes)
+add_subdirectory(shiny-guacamole)
 
 
-include_directories(src)
-add_executable(test main.cpp src/vectors2.hpp src/environment.hpp src/environment.cpp /
- src/window.hpp src/window.cpp src/shape.cpp src/shape.hpp src/color.hpp src/color.cpp /
- src/square.hpp src/square.cpp src/magicArray.hpp src/camera.hpp src/camera.cpp)
-target_link_libraries(test glad glfw glm)
-
-set(CPACK_PROJECT_NAME ${PROJECT_NAME})
-set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
-include(CPack)
+add_executable(test test.cpp)
+target_link_libraries(test shiny_guacamole)
