@@ -17,11 +17,14 @@ class Shape
     void setPosition(glm::vec3 pos);
     void setRotation(float angle);
     void setScale(glm::vec2 scale);
+    glm::vec4 getColor();
+    void setColor(glm::vec4 color);
     const std::string getName();
+
+    protected:
+    glm::vec4 color;
     float *vertices;
     unsigned int *indices;
-
-
     std::string shapeName;
     int verticesSize;
     glm::vec3 position;
