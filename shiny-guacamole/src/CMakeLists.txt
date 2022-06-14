@@ -19,8 +19,8 @@ FetchContent_MakeAvailable(glfw)
 FetchContent_MakeAvailable(glad)
 FetchContent_MakeAvailable(glm)
 
+file(GLOB SOURCE_FILES ../includes/*.hpp *.cpp)
 
-add_library(shiny_guacamole ../includes/environment.hpp environment.cpp ../includes/shape.hpp shape.cpp /
-../includes/square.hpp square.cpp)
+add_library(shiny_guacamole ${SOURCE_FILES} )
 target_link_libraries(shiny_guacamole glad glfw glm)
 
