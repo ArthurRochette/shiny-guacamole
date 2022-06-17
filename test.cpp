@@ -2,11 +2,12 @@
 
 #include "environment.hpp"
 #include "square.hpp"
+#include "point.hpp"
 
 int main(int, char **)
 {
     Environment env(800, 600, "simulation");
-    Square square(glm::vec3(0,0,0), glm::vec2(1,1));
-    env.addShape(square);
+    Point p(0,0,0);
+    env.add(p);
     env.render();
 }

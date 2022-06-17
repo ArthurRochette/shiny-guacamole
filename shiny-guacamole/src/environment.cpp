@@ -36,15 +36,16 @@ Environment::~Environment()
     glfwTerminate();
 }
 
-void Environment::addShape(std::shared_ptr<Shape> shape)
+void Environment::add(std::shared_ptr<Displayable> shape)
 {
     shapes.push_back(shape);
 }
 
-void Environment::addShape(Shape &shape)
+void Environment::add(Displayable &shape)
 {
-    shapes.push_back(std::shared_ptr<Shape>(&shape));
+    shapes.push_back(std::shared_ptr<Displayable>(&shape));
 }
+
 
 void Environment::removeShape(std::shared_ptr<Shape> shape)
 {
@@ -62,7 +63,7 @@ void Environment::removeShape(int index)
     shapes.erase(shapes.begin() + index);
 }
 
-std::vector<std::shared_ptr<Shape>> Environment::getShapes() const
+std::vector<std::shared_ptr<Displayable>> Environment::getShapes() const
 {
     return shapes;
 }

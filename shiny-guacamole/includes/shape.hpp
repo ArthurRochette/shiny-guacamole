@@ -5,28 +5,32 @@
 #include "GLFW/glfw3.h"
 #include "glm/gtc/matrix_transform.hpp"
 
+#include "color.hpp"
+#include "displayable.hpp"
+
 #include <iostream>
 
 
-class Shape
+class Shape : public Displayable
 {
     public:
-    Shape(float *newVertices, unsigned int *newIndices, int nbrVertices, int nbrIndices);
+    Shape(float *newVertices, unsigned int *newIndices, unsigned int nbrVertices, unsigned int nbrIndices);
     ~Shape();
     void render();
     void setPosition(glm::vec3 pos);
     void setRotation(float angle);
     void setScale(glm::vec2 scale);
-    glm::vec4 getColor();
-    void setColor(glm::vec4 color);
-    const std::string getName();
+    Color getColor() const ;
+    void setColor(Color& color);
+    const std::string getName() const ;
 
     protected:
-    glm::vec4 color;
+    Color color;
     float *vertices;
     unsigned int *indices;
     std::string shapeName;
-    int verticesSize;
+    unsigned int verticesNumber;
+    unsigned int indicesNumber;
     glm::vec3 position;
     private:
     unsigned int VAO, VBO, EBO;
