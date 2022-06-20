@@ -28,6 +28,8 @@ public:
     void render();
     void setShaders(const GLchar* vertexShader, const GLchar* fragmentShader);
     void computeLogic();
+    std::shared_ptr<Displayable> getShape(int index);
+    std::shared_ptr<Displayable> getShape(std::string name);
 
 private:
     GLFWwindow *window;

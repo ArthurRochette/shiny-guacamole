@@ -110,6 +110,24 @@ void Environment::setShaders(const GLchar *vertexShader, const GLchar *fragmentS
     shaders = Shader(vertexShader, fragmentShader);
 }
 
+std::shared_ptr<Displayable> Environment::getShape(int index)
+{
+    return shapes[index];
+}
+
+std::shared_ptr<Displayable> Environment::getShape(std::string name)
+{
+    for (int i = 0; i < shapes.size(); i++)
+    {
+        if (shapes[i]->getName() == name)
+        {
+            return shapes[i];
+        }
+    }
+    return nullptr;
+}
+
+
 void framebuffer_size_callback(GLFWwindow *window, int width, int height)
 {
     glViewport(0, 0, width, height);

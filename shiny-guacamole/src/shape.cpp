@@ -109,7 +109,7 @@ void Shape::setScale(glm::vec2 scale)
     }
 }
 
-const std::string Shape::getName() const
+const std::string Shape::getShapeName() const
 {
     return shapeName;
 }
@@ -149,3 +149,4 @@ void Shape::setPosition(float x, float y, float z)
     }
     position = glm::vec3(x, y, z);
 }
+

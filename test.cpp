@@ -11,6 +11,7 @@ int main(int, char **)
     Environment env(800, 800, "Test");
 
     Circle c(0, 0, 0, 0.75, 100);
+    c.setName("MyCircle");
     c.setColor(Color(1, 0, 0, 0.2));
     c.setPosition(1,0,0);
     c.setPosition(1,0,0);
@@ -32,6 +33,6 @@ int main(int, char **)
 
 void Environment::computeLogic()
 {
-
+    
     //std::cout << "logic" << std::endl;
 }

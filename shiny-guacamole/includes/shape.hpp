@@ -24,9 +24,10 @@ class Shape : public Displayable
     void setPosition(float x, float y, float z);
     void setRotation(float angle);
     void setScale(glm::vec2 scale);
+
     Color getColor() const ;
     void setColor(Color color);
-    const std::string getName() const ;
+    const std::string getShapeName() const ;
 
     protected:
     Color color;
