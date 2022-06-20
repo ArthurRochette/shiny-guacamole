@@ -28,6 +28,9 @@ Environment::Environment(int width, int height, std::string title)
     }
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+
     shaders = Shader("./shaders/vertex.glsl", "./shaders/fragment.glsl");
 }
 
@@ -43,7 +46,7 @@ void Environment::add(std::shared_ptr<Displayable> shape)
 
 void Environment::add(Displayable &shape)
 {
-    shapes.push_back(std::shared_ptr<Displayable>(&shape));
+    shapes.push_back(std::shared_ptr<Displayable>(&shape));//FIXME ?>>
 }
 
 
@@ -71,19 +74,9 @@ std::vector<std::shared_ptr<Displayable>> Environment::getShapes() const
 void Environment::render()
 {
 
-    float vertices[] = {
-        // positions          // texture coords
-        0.5f, 0.5f, 0.0f,    // top right
-        0.5f, -0.5f, 0.0f,   // bottom right
-        -0.5f, -0.5f, 0.0f,  // bottom left
-        -0.5f, 0.5f, 0.0f,    // top left
-    };
-    unsigned int indices[] = {
-        0, 1, 3, // first triangle
-        1, 2, 3  // second triangle
-    };
     while (!glfwWindowShouldClose(window))
     {
+        computeLogic();
         processInput(window);
         glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);

@@ -19,8 +19,10 @@ FetchContent_MakeAvailable(glfw)
 FetchContent_MakeAvailable(glad)
 FetchContent_MakeAvailable(glm)
 
-file(GLOB SOURCE_FILES ../includes/*.hpp *.cpp)
+file(GLOB_RECURSE INCLUDES_FILES ../includes/*.hpp)
+file(GLOB_RECURSE SRC_FILES  ./*.cpp)
+set(SRC_FILES ${SRC_FILES} ${INCLUDES_FILES})
 
-add_library(shiny_guacamole ${SOURCE_FILES} )
+add_library(shiny_guacamole ${SRC_FILES} )
 target_link_libraries(shiny_guacamole glad glfw glm)
 

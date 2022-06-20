@@ -12,6 +12,9 @@
 #include <vector>
 #include <memory>
 
+//TODO faire deux systemes de rendu un rapide (chaque frame) un autre plus lent (interface)
+
+
 class Environment
 {
 public:
@@ -24,6 +27,7 @@ public:
     std::vector<std::shared_ptr<Displayable>> getShapes() const;
     void render();
     void setShaders(const GLchar* vertexShader, const GLchar* fragmentShader);
+    void computeLogic();
 
 private:
     GLFWwindow *window;

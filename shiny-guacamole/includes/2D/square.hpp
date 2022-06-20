@@ -6,6 +6,7 @@
 class Square: public Shape{
     public:
     Square(glm::vec3 pos, glm::vec2 size);
+    Square(float x, float y, float z);
     private:
     float vertices[12] = {
         -0.5f, -0.5f, 0.0f,

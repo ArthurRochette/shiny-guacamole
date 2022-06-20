@@ -15,13 +15,15 @@ class Shape : public Displayable
 {
     public:
     Shape(float *newVertices, unsigned int *newIndices, unsigned int nbrVertices, unsigned int nbrIndices);
+    Shape();
     ~Shape();
     void render();
     void setPosition(glm::vec3 pos);
+    void setPosition(float x, float y, float z);
     void setRotation(float angle);
     void setScale(glm::vec2 scale);
     Color getColor() const ;
-    void setColor(Color& color);
+    void setColor(Color color);
     const std::string getName() const ;
 
     protected:

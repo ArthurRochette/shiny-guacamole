@@ -17,7 +17,8 @@ class Point : public Displayable
     ~Point();
     void render();
     void setPosition(glm::vec3 pos);
-    void setColor(Color& color);
+    void setPosition(float x, float y, float z);
+    void setColor(Color color);
     Color getColor() const ;
     const std::string getName() const;
 

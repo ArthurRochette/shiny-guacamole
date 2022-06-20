@@ -7,8 +7,21 @@ Shape::Shape(float *newVertices, unsigned int *newIndices, unsigned int nbrVerti
     verticesNumber = nbrVertices;
     indices = newIndices;
     indicesNumber = nbrIndices;
-    shapeName = "undefined";
-    color = Color(1, 0, 0, 1);
+    color = Color();
+
+    glGenVertexArrays(1, &VAO);
+    glGenBuffers(1, &VBO);
+    glGenBuffers(1, &EBO);
+}
+
+Shape::Shape()
+{
+    position = glm::vec3(0, 0, 0);
+    vertices = NULL;
+    verticesNumber = 0;
+    indices = NULL;
+    indicesNumber = 0;
+    color = Color();
 
     glGenVertexArrays(1, &VAO);
     glGenBuffers(1, &VBO);
@@ -24,42 +37,50 @@ Shape::~Shape()
 
 void Shape::render()
 {
-    float *verticesColors = new float[verticesNumber * 2];
-    // incorporate color into vertices , x y z r g b
-    for (int i = 0; i < verticesNumber; i+=3)
+    float *verticesColors = new float[verticesNumber * 2 + verticesNumber / 3];
+    // incorporate color into vertices, x y z r g b
+    int j = 0;
+    for (int i = 0, j = 0; i < verticesNumber; i+=3, j += 7)
     {
-        verticesColors[i * 2] = vertices[i];
-        verticesColors[i * 2 + 1] = vertices[i+1];
-        verticesColors[i * 2 + 2] = vertices[i+2];
-        verticesColors[i * 2 + 3] = color.r;
-        verticesColors[i * 2 + 4] = color.g;
-        verticesColors[i * 2 + 5] = color.b;
+        verticesColors[j] = vertices[i];
+        verticesColors[j+1] = vertices[i + 1];
+        verticesColors[j+2] = vertices[i + 2];
+        verticesColors[j+3] = color.r;
+        verticesColors[j+4] = color.g;
+        verticesColors[j+5] = color.b;
+        verticesColors[j+6] = color.a;
+
     }
 
-    for (int i = 0; i < verticesNumber; i+=3)
-    {
-        std::cout << verticesColors[i * 2] << " " << verticesColors[i * 2 + 1] << " " << verticesColors[i * 2 + 2] << " " << verticesColors[i * 2 + 3] << " " << verticesColors[i * 2 + 4] << " " << verticesColors[i * 2 + 5] << std::endl;
-    }
-    std::cout << std::endl;
 
     glBindVertexArray(VAO);
 
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
-    glBufferData(GL_ARRAY_BUFFER, verticesNumber*4 * 2, verticesColors, GL_STATIC_DRAW); // *4 for bytes , *2 for colors
+    glBufferData(GL_ARRAY_BUFFER, (verticesNumber * 2 + verticesNumber / 3) * 4, verticesColors, GL_STATIC_DRAW); 
 
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, indicesNumber*4, indices, GL_STATIC_DRAW); // *4 for bytes
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, indicesNumber * 4, indices, GL_STATIC_DRAW); // *4 for bytes
 
     // position attribute
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void *)0);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 7 * sizeof(float), (void *)0);
     glEnableVertexAttribArray(0);
-    //color attribute
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void *)(3 * sizeof(float)));
+    // color attribute
+    glVertexAttribPointer(1, 4, GL_FLOAT, GL_FALSE, 7 * sizeof(float), (void *)(3 * sizeof(float)));
     glEnableVertexAttribArray(1);
 
     glBindVertexArray(VAO);
-    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+    glDrawElements(GL_TRIANGLES, verticesNumber, GL_UNSIGNED_INT, 0);
     delete verticesColors;
+}
+
+void Shape::setPosition(float x, float y, float z)
+{
+    for (int i = 0; i < verticesNumber; i += 3)
+    {
+        vertices[i] += x;
+        vertices[i + 1] += y;
+        vertices[i + 2] += z;
+    }
 }
 
 void Shape::setPosition(glm::vec3 pos)
@@ -91,7 +112,7 @@ Color Shape::getColor() const
     return color;
 }
 
-void Shape::setColor(Color& color)
+void Shape::setColor(Color color)
 {
     this->color = color;
 }
