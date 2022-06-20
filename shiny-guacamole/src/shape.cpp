@@ -126,20 +126,20 @@ void Shape::setColor(Color color)
 
 void Shape::setPosition(glm::vec3 pos)
 {
-    position = pos - position;
+    glm::vec3 vecteurMov =  pos - position;
+
     for (int i = 0; i < verticesNumber; i += 3)
     {
-        vertices[i] += pos.x;
-        vertices[i + 1] += pos.y;
-        vertices[i + 2] += pos.z;
+        vertices[i] += vecteurMov.x;
+        vertices[i + 1] += vecteurMov.y;
+        vertices[i + 2] += vecteurMov.z;
     }
+    position = pos;
 }
 
 void Shape::setPosition(float x, float y, float z)
 {
-    std::cout << "ancienne pos:" << position.x << " " << position.y << " " << position.z << std::endl;
     glm::vec3 vecteurMov =  glm::vec3(x, y, z) - position;
-    std::cout << "new pos:" << position.x << " " << position.y << " " << position.z << std::endl;
 
     for (int i = 0; i < verticesNumber; i += 3)
     {

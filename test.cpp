@@ -12,10 +12,8 @@ int main(int, char **)
 
     Circle c(0, 0, 0, 0.75, 100);
     c.setColor(Color(1, 0, 0, 0.2));
-    std::cout << "moi" << std::endl;
     c.setPosition(1,0,0);
     c.setPosition(1,0,0);
-    std::cout << "non" << std::endl;
 
 
     Square s(0, 0, 0);
