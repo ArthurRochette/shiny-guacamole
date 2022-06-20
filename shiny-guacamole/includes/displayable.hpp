@@ -4,9 +4,11 @@
 class Displayable 
 {
     public:
+    Displayable();
     virtual void render() = 0;
-    void setPosition(glm::vec3 pos);
-    void setPosition(float x, float y, float z);
+
+    unsigned int ID;
+    static unsigned int ID_COUNTER;
 };
 
 #endif // DISPLAYABLE_HPP

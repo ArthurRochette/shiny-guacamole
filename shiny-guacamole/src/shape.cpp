@@ -4,6 +4,7 @@ Shape::Shape(float *newVertices, unsigned int *newIndices, unsigned int nbrVerti
 {
     position = glm::vec3(0, 0, 0);
     vertices = newVertices;
+
     verticesNumber = nbrVertices;
     indices = newIndices;
     indicesNumber = nbrIndices;
@@ -22,7 +23,7 @@ Shape::Shape()
     indices = NULL;
     indicesNumber = 0;
     color = Color();
-
+    
     glGenVertexArrays(1, &VAO);
     glGenBuffers(1, &VBO);
     glGenBuffers(1, &EBO);
@@ -73,8 +74,12 @@ void Shape::render()
     delete verticesColors;
 }
 
-void Shape::setPosition(float x, float y, float z)
+void Shape::move(float x, float y, float z)
 {
+    position.x += x;
+    position.y += y;
+    position.z += z;
+
     for (int i = 0; i < verticesNumber; i += 3)
     {
         vertices[i] += x;
@@ -83,8 +88,10 @@ void Shape::setPosition(float x, float y, float z)
     }
 }
 
-void Shape::setPosition(glm::vec3 pos)
+void Shape::move(glm::vec3 pos)
 {
+    position += pos;
+
     for (int i = 0; i < verticesNumber; i += 3)
     {
         vertices[i] += pos.x;
@@ -115,4 +122,30 @@ Color Shape::getColor() const
 void Shape::setColor(Color color)
 {
     this->color = color;
+}
+
+void Shape::setPosition(glm::vec3 pos)
+{
+    position = pos - position;
+    for (int i = 0; i < verticesNumber; i += 3)
+    {
+        vertices[i] += pos.x;
+        vertices[i + 1] += pos.y;
+        vertices[i + 2] += pos.z;
+    }
+}
+
+void Shape::setPosition(float x, float y, float z)
+{
+    std::cout << "ancienne pos:" << position.x << " " << position.y << " " << position.z << std::endl;
+    glm::vec3 vecteurMov =  glm::vec3(x, y, z) - position;
+    std::cout << "new pos:" << position.x << " " << position.y << " " << position.z << std::endl;
+
+    for (int i = 0; i < verticesNumber; i += 3)
+    {
+        vertices[i] += vecteurMov.x;
+        vertices[i + 1] += vecteurMov.y;
+        vertices[i + 2] += vecteurMov.z;
+    }
+    position = glm::vec3(x, y, z);
 }

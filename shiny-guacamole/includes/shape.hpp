@@ -18,6 +18,8 @@ class Shape : public Displayable
     Shape();
     ~Shape();
     void render();
+    void move(glm::vec3 pos);
+    void move(float x, float y, float z);
     void setPosition(glm::vec3 pos);
     void setPosition(float x, float y, float z);
     void setRotation(float angle);
@@ -33,7 +35,7 @@ class Shape : public Displayable
     std::string shapeName;
     unsigned int verticesNumber;
     unsigned int indicesNumber;
-    glm::vec3 position;
+    glm::vec3 position; // centre de l'objet
     private:
     unsigned int VAO, VBO, EBO;
 

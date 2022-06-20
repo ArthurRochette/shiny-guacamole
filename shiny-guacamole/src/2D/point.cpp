@@ -27,8 +27,6 @@ void Point::render()
     points[4] = color.g;
     points[5] = color.b;
 
-
-
     glBindVertexArray(VAO);
 
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
