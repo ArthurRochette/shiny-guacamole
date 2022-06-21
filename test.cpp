@@ -8,7 +8,7 @@
 
 int main(int, char **)
 {
-    Environment env(800, 800, "Test");
+    Environment env(1920, 1080, "Test");
 
     Circle c(0, 0, 0, 0.75, 100);
     c.setName("MyCircle");
@@ -18,7 +18,7 @@ int main(int, char **)
 
 
     Square s(0, 0, 0);
-    s.setPosition(-1,0,0);
+    s.setPosition(-1,0,-1);
     s.setColor(Color(0, 1, 0, 1));
     Point p(0,0,0);
     p.setPosition(0,0,0);

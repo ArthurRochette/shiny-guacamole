@@ -12,8 +12,7 @@
 #include <vector>
 #include <memory>
 
-//TODO faire deux systemes de rendu un rapide (chaque frame) un autre plus lent (interface)
-
+// TODO faire deux systemes de rendu un rapide (chaque frame) un autre plus lent (interface)
 
 class Environment
 {
@@ -26,7 +25,7 @@ public:
     void removeShape(int index);
     std::vector<std::shared_ptr<Displayable>> getShapes() const;
     void render();
-    void setShaders(const GLchar* vertexShader, const GLchar* fragmentShader);
+    void setShaders(const GLchar *vertexShader, const GLchar *fragmentShader);
     void computeLogic();
     std::shared_ptr<Displayable> getShape(int index);
     std::shared_ptr<Displayable> getShape(std::string name);
