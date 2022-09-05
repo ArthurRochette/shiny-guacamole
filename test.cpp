@@ -5,34 +5,23 @@
 #include "2D/square.hpp"
 #include "shape.hpp"
 #include "2D/point.hpp"
+#include "UI/interface.hpp"
+#include "UI/button.hpp"
+#include "2D/circle.hpp"
 
 int main(int, char **)
 {
-    Environment env(1920, 1080, "Test");
+    Environment env(500, 500, "Test");
+    Interface interface(-3,0,1,5);
+    Square sq(0,0,0,1,2);
 
-    Circle c(0, 0, 0, 0.75, 100);
-    c.setName("MyCircle");
-    c.setColor(Color(1, 0, 0, 0.2));
-    c.setPosition(1,0,0);
-    c.setPosition(1,0,0);
-
-
-    Square s(0, 0, 0);
-    s.setPosition(-1,0,-1);
-    s.setColor(Color(0, 1, 0, 1));
-    Point p(0,0,0);
-    p.setPosition(0,0,0);
-    p.setColor(Color(0,0,1,1));
-    env.add(p);
-    env.add(s);
-    env.add(c);
-
+    env.addUI(interface);//FIXME
+    env.addShape(sq);
     env.render();
 }
 
-
 void Environment::computeLogic()
 {
-    
-    //std::cout << "logic" << std::endl;
+    //TODO thread
+    // std::cout << "logic" << std::endl;
 }

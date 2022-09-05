@@ -10,7 +10,10 @@
 
 #include <iostream>
 
-
+/**
+ * @brief Shape class
+ * @details This class is used to create shapes.
+ */
 class Shape : public Displayable
 {
     public:
@@ -27,18 +30,17 @@ class Shape : public Displayable
 
     Color getColor() const ;
     void setColor(Color color);
-    const std::string getShapeName() const ;
 
     protected:
     Color color;
     float *vertices;
     unsigned int *indices;
-    std::string shapeName;
     unsigned int verticesNumber;
     unsigned int indicesNumber;
     glm::vec3 position; // centre de l'objet
     private:
     unsigned int VAO, VBO, EBO;
+    
 
 };
 

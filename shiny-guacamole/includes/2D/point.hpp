@@ -10,10 +10,15 @@
 
 #include <iostream>
 
+
+/**
+ * @brief Point class
+ */
 class Point : public Displayable
 {
     public:
     Point(float x, float y, float z);
+    Point(glm::vec3 pos);
     ~Point();
     void render();
     void setPosition(glm::vec3 pos);

@@ -2,7 +2,10 @@
 #define COLOR_HPP
 
 #include <ostream>
-
+/**
+ * @brief Color class
+ * @details This class is used to create and manage colors.
+ */
 struct Color
 {
     Color(): r(1), g(0.2), b(1) , a(1) {} 
@@ -13,18 +16,25 @@ struct Color
     float b;
     float a;
 
-    // << operator overload
     friend std::ostream &operator<<(std::ostream &os, const Color &c)
     {
         os << "Color: " << c.r << " " << c.g << " " << c.b << " " << c.a;
         return os;
     }
 
+    /**
+     * @brief from255 converts color values from 0-255 to 0-1
+     * @return converted values as Color object
+    */
     static Color from255(int r, int g, int b, int a)
     {
         return Color(r / 255.0f, g / 255.0f, b / 255.0f, a / 255.0f);
     }
     
+    /**
+     * @brief from255 converts color values from hexa to 0-1
+     * @return converted values as Color object
+    */
     static Color fromHex(std::string hex)
     {
         float r = std::stoi(hex.substr(0, 2), nullptr, 16)/255.0f;

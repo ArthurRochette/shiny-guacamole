@@ -10,6 +10,10 @@
 #include <sstream>
 #include <iostream>
 
+/**
+ * @brief Shader class
+ * @details This class is used to create and contain shaders.
+ */
 
 class Shader
 {   

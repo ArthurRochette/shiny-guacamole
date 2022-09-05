@@ -64,6 +64,7 @@ Shader::Shader(){
 }
 
 void Shader::use(){
+    std::cout << "SHADER::USE" << ID << std::endl;
     glUseProgram(ID);
 }
 

@@ -3,24 +3,14 @@
 
 #include "shape.hpp"
 
+/**
+ * @brief Square class
+ */
 class Square: public Shape{
     public:
     Square(glm::vec3 pos, glm::vec2 size);
     Square(float x, float y, float z);
-    private:
-
-
-    const float _vertices[12] = {
-        -0.5f, -0.5f, 0.0f,
-        0.5f, -0.5f, 0.0f,
-        0.5f, 0.5f, 0.0f,
-        -0.5f, 0.5f, 0.0f
-    };
-    const unsigned int _indices[6] = {
-        0, 1, 2,
-        2, 3, 0
-    };
-
+    Square(float x, float y, float z, float width, float height);
 
 };
 

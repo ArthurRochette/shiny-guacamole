@@ -109,11 +109,6 @@ void Shape::setScale(glm::vec2 scale)
     }
 }
 
-const std::string Shape::getShapeName() const
-{
-    return shapeName;
-}
-
 Color Shape::getColor() const
 {
     return color;
